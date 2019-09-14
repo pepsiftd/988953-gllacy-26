@@ -34,11 +34,58 @@
 			</div>
 
 			<div class="useful-info">
-				С 10 до 20, ежедневно<br>
+				С 10 до 20, ежедневно
 				<a href="tel:+78124502525">8 812 450-25-25</a>
 			</div>
 
 			<h1>Сливочное мороженое</h1>
+
+			<form action="">
+				<p>
+					<label for="sorting">Сортировка:</label>
+					<select name="sorting" id="sorting">
+						<option value="popularity">по популярности</option>
+					</select>
+
+					<label for="price-range">Цена: 100 руб. - 500 руб.</label>
+					<input type="range" id="price-range">
+
+					Жирность:
+					<input type="radio" name="radio-fat" id="zero">
+					<label for="zero">0%</label>
+
+					<input type="radio" name="radio-fat" id="under-10">
+					<label for="under-10">до 10%</label>
+
+					<input type="radio" name="radio-fat" id="under-30">
+					<label for="under-30">до 30%</label>
+
+					<input type="radio" name="radio-fat" id="over-30">
+					<label for="over-30">выше 30%</label>
+				</p>
+
+				<p>
+					Наполнители:
+					<input type="checkbox" name="chocolate" id="check-chocolate">
+					<label for="check-chocolate">шоколадные</label>
+
+					<input type="checkbox" name="sugar-top" id="check-sugar-top">
+					<label for="check-sugar-top">сахарные присыпки</label>
+
+					<input type="checkbox" name="fruit" id="check-fruit">
+					<label for="check-fruit">фрукты</label>
+
+					<input type="checkbox" name="syrup" id="check-syrup">
+					<label for="check-syrup">сиропы</label>
+
+					<input type="checkbox" name="jam" id="check-jam">
+					<label for="check-jam">джемы</label>
+
+					<input type="submit" value="Применить">
+				</p>
+
+			</form>
+
 			<ol>
 				<li>
 					<h3><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
@@ -114,9 +161,14 @@
 					</p></li>
 			</ol>
 			
-			<!-- <section class="pagination">
-				
-			</section> -->
+			<ul>
+				<li><a>1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+			</ul>
+			<a href="#">Вперед</a>
 		</main>
 
   	<footer>
