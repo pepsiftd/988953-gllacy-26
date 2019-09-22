@@ -9,7 +9,17 @@
       <img src="img/logo.svg" width="158" height="70" alt="Логотип магазина Глейси">
   		<nav>
 	  		<ul>
-	  			<li><a href="catalog.html">Каталог</a></li>
+	  			<li>
+            <ul>
+              <li><a href="catalog.html">Каталог</a></li>
+              <li><a href="#"></a>Новинки</li>
+              <li><a href="catalog.html"></a>Сливочное</li>
+              <li><a href="#"></a>Щербеты</li>
+              <li><a href="#"></a>Фруктовый лед</li>
+              <li><a href="#"></a>Мелорин</li>
+            </ul>    
+          </li>
+
 	  			<li><a href="delivery.html">Доставка и оплата</a></li>
 	  			<li><a href="about.html">О Компании</a></li>
 	  		</ul>
@@ -20,10 +30,17 @@
   			<li><a href="login.html">Войти</a></li>
   			<li><button type="button">Корзина</button></li>
   		</ul>
+
+      <section class="modal modal-search">
+        <h2 class="visually-hidden">Поиск по сайту</h2>
+        <form action="https://echo.htmlacademy.ru" method="post">          
+          <input type="search" name="searchline" id="searchline" placeholder="Что ищем?">
+        </form>
+      </section>
   	</header>
 
   	<main>
-  		<h1>Магазин мороженого Глейси</h1>
+  		<h1 class="visually-hidden">Магазин мороженого Глейси</h1>
   		<section class="slider">
   			<div class="useful-info">
           С 10 до 20, ежедневно
@@ -50,7 +67,7 @@
   		</section>
 
   		<section class="hot-deals">
-        <h2>Горячие предложения!</h2>
+        <h2 class="visually-hidden">Горячие предложения!</h2>
         <article>
     			<h3>Малинка даром!</h3>
           <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
@@ -65,7 +82,7 @@
   		</section>
 
   		<section class="bestsellers">
-  			<h2>Хиты продаж</h2>
+  			<h2 class="visually-hidden">Хиты продаж</h2>
         <ul>
           <li>
             <h3><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
@@ -95,7 +112,7 @@
   		</section>
 
   		<section class="advantages">
-  			<h2>Наши преимущества</h2>
+  			<h2 class="visually-hidden">Наши преимущества</h2>
   			<p>Магазин Глэйси - это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
   			<dl>
   				<dt>Собственное производство</dt>
@@ -115,17 +132,17 @@
   		</section>
 
   		<section class="subscribe">
-  			<h2>Подписка</h2>
+  			<h2 class="visually-hidden">Подписка</h2>
   			<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
         <form action="https://echo.htmlacademy.ru" method="post">
-          <label for="input-email">Ваша электронная почта</label>
+          <label for="input-email" class="visually-hidden">Ваша электронная почта</label>
           <input type="email" name="email" id="input-email" placeholder="email@example.com">
           <button type="submit">Отправить</button>
         </form>  			
   		</section>
 
   		<section class="map">
-  			<h2>Как нас найти</h2>
+  			<h2 class="visually-hidden">Как нас найти</h2>
         <a href="#"><img src="img/map.png" width="1200" height="430" alt="Карта проезда к магазину Глэйси"></a>
         <div>
           <p>
@@ -142,6 +159,35 @@
           <a href="#">Форма обратной связи</a>
         </div>
   		</section>
+
+      <section class="modal modal-login">
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <h2 class="visually-hidden">Личный кабинет</h2>
+          <label for="login-email">Электронная почта</label>
+          <input type="email" name="email" id="login-email" placeholder="Электронная почта">
+          <label for="login-password">Пароль</label>
+          <input type="password" name="password" id="login-password" placeholder="Пароль">
+          <button type="submit">Войти</button>
+          <a href="forgot-password.html">Забыли пароль?</a>
+          <a href="registration.html">Новая регистрация</a>
+        </form>
+      </section>
+
+      <section class="modal modal-feedback">
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <h2 class="visually-hidden">Форма обратной связи</h2>
+          <p>Мы обязательно вам ответим!</p>
+          <label for="name" class="visually-hidden">Ваше имя</label>
+          <input type="text" name="name" id="name" placeholder="Как вас зовут?">
+          <label for="feedback-email" class="visually-hidden">Ваша электронная почта</label>
+          <input type="email" name="email" id="feedback-email" placeholder="Ваша почта для ответа?">
+          <label for="comment" class="visually-hidden">Комментарий</label>
+          <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Напишите что-нибудь..."></textarea>
+          <button type="submit">Отправить</button>
+          <button type="button" aria-label="Закрыть">X</button>
+        </form>
+      </section>
+
   	</main>
   	<footer>
   		<div class="social">
