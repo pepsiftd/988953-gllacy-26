@@ -27,7 +27,7 @@
   		<section class="slider">
   			<div class="useful-info">
           С 10 до 20, ежедневно
-          <a href="tel:+78124502525">8 812 450-25-25</a>
+          <a href="tel:+78124502525" aria-label="Контактный телефон">8 812 450-25-25</a>
         </div>
 
         <ul>
@@ -71,25 +71,25 @@
             <h3><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
             <img src="img/1.png" width="225" height="225" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой">
             <p>
-              <span class="price">310&#8381;</span>/кг
+              <span class="price">310</span><span class="price rouble">&#8381;</span>/кг
             </p></li>
           <li>
             <h3><a href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
             <img src="img/2.png" width="225" height="225" alt="Сливочно-кофейное мороженое с кусочками шоколада">
             <p>
-              <span class="price">380&#8381;</span>/кг
+              <span class="price">380</span><span class="price rouble">&#8381;</span>/кг
             </p></li>
           <li>
             <h3><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
             <img src="img/3.png" width="225" height="225" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада">
             <p>
-              <span class="price">355&#8381;</span>/кг
+              <span class="price">355</span><span class="price rouble">&#8381;</span>/кг
             </p></li>
           <li>
             <h3><a href="#">Сливочное крем-брюле с карамельной подливкой</a></h3>
             <img src="img/4.png" width="225" height="225" alt="Сливочное мороженое крем-брюле с карамельной подливкой">
             <p>
-              <span class="price">415&#8381;</span>/кг
+              <span class="price">415</span><span class="price rouble">&#8381;</span>/кг
             </p></li>
         </ul>
   		</section>
@@ -117,8 +117,11 @@
   		<section class="subscribe">
   			<h2>Подписка</h2>
   			<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-
-  			
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <label for="input-email">Ваша электронная почта</label>
+          <input type="email" name="email" id="input-email" placeholder="email@example.com">
+          <button type="submit">Отправить</button>
+        </form>  			
   		</section>
 
   		<section class="map">
@@ -132,7 +135,7 @@
 
           <p>
             Для заказов по телефону:
-            <a href="tel:+78124502525">8 812 450-25-25</a>
+            <a href="tel:+78124502525" aria-label="Контактный телефон">8 812 450-25-25</a>
             (с 10 до 20 ежедневно)
           </p>
 
