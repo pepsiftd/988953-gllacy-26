@@ -10,13 +10,13 @@
   		<nav>
 	  		<ul>
 	  			<li>
+            <a href="catalog.html">Каталог</a>
             <ul>
-              <li><a href="catalog.html">Каталог</a></li>
-              <li><a href="#"></a>Новинки</li>
-              <li><a href="catalog.html"></a>Сливочное</li>
-              <li><a href="#"></a>Щербеты</li>
-              <li><a href="#"></a>Фруктовый лед</li>
-              <li><a href="#"></a>Мелорин</li>
+              <li><a href="#">Новинки</a></li>
+              <li><a href="catalog.html">Сливочное</a></li>
+              <li><a href="#">Щербеты</a></li>
+              <li><a href="#">Фруктовый лед</a></li>
+              <li><a href="#">Мелорин</a></li>
             </ul>    
           </li>
 
@@ -34,7 +34,7 @@
       <section class="modal modal-search">
         <h2 class="visually-hidden">Поиск по сайту</h2>
         <form action="https://echo.htmlacademy.ru" method="post">          
-          <input type="search" name="searchline" id="searchline" placeholder="Что ищем?">
+          <input type="search" name="searchline" id="searchline" placeholder="Что ищем?" aria-label="Строка поиска">
         </form>
       </section>
   	</header>
@@ -51,16 +51,6 @@
           <li>
             <h2>Крем-брюле и пломбир с малиновым джемом</h2>
             <img src="img/slider-image-1.png" width="647" height="584" alt="Крем-брюле и пломбир с малиновым джемом">
-            <a href="#">Давайте оба!</a>
-          </li>
-          <li>
-            <h2>Шоколадный пломбир и лимонный сорбет</h2>
-            <img src="img/slider-image-2.png" width="644" height="582" alt="Шоколадный пломбир и лимонный сорбет">
-            <a href="#">Давайте оба!</a>
-          </li>
-          <li>
-            <h2>Пломбир с помадкой и клубничный щербет</h2>
-            <img src="img/slider-image-3.png" width="639" height="582" alt="Пломбир с помадкой и клубничный щербет">
             <a href="#">Давайте оба!</a>
           </li>
         </ul>
@@ -85,26 +75,34 @@
   			<h2 class="visually-hidden">Хиты продаж</h2>
         <ul>
           <li>
-            <h3><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
-            <img src="img/1.png" width="225" height="225" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой">
+            <a href="#">
+              <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
+              <img src="img/1.png" width="225" height="225" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой">
+            </a>
             <p>
               <span class="price">310</span><span class="price rouble">&#8381;</span>/кг
             </p></li>
           <li>
-            <h3><a href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
-            <img src="img/2.png" width="225" height="225" alt="Сливочно-кофейное мороженое с кусочками шоколада">
+            <a href="#">
+              <h3>Сливочно-кофейное с кусочками шоколада</h3>
+              <img src="img/2.png" width="225" height="225" alt="Сливочно-кофейное мороженое с кусочками шоколада">
+            </a>
             <p>
               <span class="price">380</span><span class="price rouble">&#8381;</span>/кг
             </p></li>
           <li>
-            <h3><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
-            <img src="img/3.png" width="225" height="225" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада">
+            <a href="#">
+              <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
+              <img src="img/3.png" width="225" height="225" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада">
+            </a>
             <p>
               <span class="price">355</span><span class="price rouble">&#8381;</span>/кг
             </p></li>
           <li>
-            <h3><a href="#">Сливочное крем-брюле с карамельной подливкой</a></h3>
-            <img src="img/4.png" width="225" height="225" alt="Сливочное мороженое крем-брюле с карамельной подливкой">
+            <a href="#">
+              <h3>Сливочное крем-брюле с карамельной подливкой</h3>
+              <img src="img/4.png" width="225" height="225" alt="Сливочное мороженое крем-брюле с карамельной подливкой">
+            </a>
             <p>
               <span class="price">415</span><span class="price rouble">&#8381;</span>/кг
             </p></li>
@@ -143,7 +141,7 @@
 
   		<section class="map">
   			<h2 class="visually-hidden">Как нас найти</h2>
-        <a href="#"><img src="img/map.png" width="1200" height="430" alt="Карта проезда к магазину Глэйси"></a>
+        <a href="#"><img src="img/map.png" width="1200" height="430" alt="Карта проезда к магазину Глэйси по адресу Санкт-Петербург, ул. Большая Конюшенная 19/8"></a>
         <div>
           <p>
             Адрес главного офиса и офлайн-магазина:
@@ -161,8 +159,8 @@
   		</section>
 
       <section class="modal modal-login">
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <h2 class="visually-hidden">Личный кабинет</h2>
+        <h2 class="visually-hidden">Личный кабинет</h2>
+        <form action="https://echo.htmlacademy.ru" method="post">          
           <label for="login-email">Электронная почта</label>
           <input type="email" name="email" id="login-email" placeholder="Электронная почта">
           <label for="login-password">Пароль</label>
@@ -174,8 +172,8 @@
       </section>
 
       <section class="modal modal-feedback">
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <h2 class="visually-hidden">Форма обратной связи</h2>
+        <h2 class="visually-hidden">Форма обратной связи</h2>
+        <form action="https://echo.htmlacademy.ru" method="post">          
           <p>Мы обязательно вам ответим!</p>
           <label for="name" class="visually-hidden">Ваше имя</label>
           <input type="text" name="name" id="name" placeholder="Как вас зовут?">
