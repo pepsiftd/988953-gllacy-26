@@ -2,16 +2,19 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
+    <title>HTML Academy:Магазин Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic-ext" rel="stylesheet">  
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body style="background-color: #99aea2">
+  <body>
   	<header>      
       <img src="img/logo.svg" width="158" height="70" alt="Логотип магазина Глейси">
-  		<nav>
+  		<nav class="main-navigation">
 	  		<ul>
-	  			<li>
+	  			<li class="menu-button">
             <a href="catalog.html">Каталог</a>
-            <ul>
+            <ul class="submenu-catalog">
               <li><a href="#">Новинки</a></li>
               <li><a href="catalog.html">Сливочное</a></li>
               <li><a href="#">Щербеты</a></li>
@@ -20,15 +23,15 @@
             </ul>    
           </li>
 
-	  			<li><a href="delivery.html">Доставка и оплата</a></li>
-	  			<li><a href="about.html">О Компании</a></li>
+	  			<li class="menu-button"><a href="delivery.html">Доставка и оплата</a></li>
+	  			<li class="menu-button"><a href="about.html">О Компании</a></li>
 	  		</ul>
 			</nav>
 
-  		<ul>
-  			<li><button type="button">Поиск</button></li>
-  			<li><a href="login.html">Войти</a></li>
-  			<li><button type="button">Корзина</button></li>
+  		<ul class="user-navigation">
+  			<li class="user-navigation-item"><button type="button">Поиск</button></li>
+  			<li class="user-navigation-item"><a href="login.html">Войти</a></li>
+  			<li class="user-navigation-item"><button type="button">Корзина</button></li>
   		</ul>
 
       <section class="modal modal-search">
@@ -111,50 +114,50 @@
 
   		<section class="advantages">
   			<h2 class="visually-hidden">Наши преимущества</h2>
-  			<p>Магазин Глэйси - это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
+  			<p class="advantages-general-text">Магазин Глэйси - это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
   			<dl>
-  				<dt>Собственное производство</dt>
-  				<dd>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</dd>
-  				<dt>Высочайшее качество</dt>
-  				<dd>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</dd>
-  				<dt>Проверенные поставщики</dt>
-  				<dd>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</dd>
-  				<dt>Правильная доставка</dt>
-  				<dd>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</dd>
+  				<dt class="advantages-icon advantages-icon-ice-cream">Собственное производство</dt>
+  				<dd class="advantages-item">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</dd>
+  				<dt class="advantages-icon advantages-icon-eco">Высочайшее качество</dt>
+  				<dd class="advantages-item">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</dd>
+  				<dt class="advantages-icon advantages-icon-cow">Проверенные поставщики</dt>
+  				<dd class="advantages-item">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</dd>
+  				<dt class="advantages-icon advantages-icon-thermometer">Правильная доставка</dt>
+  				<dd class="advantages-item">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</dd>
   			</dl>
   		</section>
 
   		<section class="blog-news">
-  			<h2>Новое в нашем блоге</h2>
-  			<p><a href="#">10 способов сервировки фруктовых щербетов к столу</a></p>
+  			<h2 class="blog-news-title">Новое в нашем блоге</h2>
+  			<a href="#" class="blog-news-item">10 способов сервировки фруктовых щербетов к столу</a>
   		</section>
 
   		<section class="subscribe">
   			<h2 class="visually-hidden">Подписка</h2>
-  			<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+  			<p class="subscribe-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
         <form action="https://echo.htmlacademy.ru" method="post">
           <label for="input-email" class="visually-hidden">Ваша электронная почта</label>
           <input type="email" name="email" id="input-email" placeholder="email@example.com">
-          <button type="submit">Отправить</button>
+          <button type="submit" class="button article-button">Отправить</button>
         </form>  			
   		</section>
 
   		<section class="map">
   			<h2 class="visually-hidden">Как нас найти</h2>
         <a href="#"><img src="img/map.png" width="1200" height="430" alt="Карта проезда к магазину Глэйси по адресу Санкт-Петербург, ул. Большая Конюшенная 19/8"></a>
-        <div>
+        <div class="map-infobox">
           <p>
             Адрес главного офиса и офлайн-магазина:
-            <span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
+            <span class="office-address">ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
           </p>
 
           <p>
             Для заказов по телефону:
-            <a href="tel:+78124502525" aria-label="Контактный телефон">8 812 450-25-25</a>
-            (с 10 до 20 ежедневно)
+            <a class="phone" href="tel:+78124502525" aria-label="Контактный телефон">8 812 450-25-25</a>
+            <span class="working-hours">(с 10 до 20 ежедневно)</span>
           </p>
 
-          <a href="#">Форма обратной связи</a>
+          <a class="button article-button" href="#">Форма обратной связи</a>
         </div>
   		</section>
 
@@ -199,7 +202,7 @@
 
   		<div>
   			<ul>
-  					<li><a href="#">Для поставщиков</a></li>
+  					<li><a class="suppliers" href="#">Для поставщиков</a></li>
   					<li><a href="#">О производстве</a></li>
 				</ul>
 			
@@ -211,7 +214,7 @@
 
   		<p>
   			<a href="https://htmlacademy.ru/intensive/htmlcss" class="html-academy-logo">HTML Academy</a>
-  			Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2017
+  			<span class="made-in-htmlacademy"> Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2017</span>
   		</p>
   	</footer>
   </body>

@@ -1,0 +1,254 @@
+body {
+	padding: 0;
+
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 400;
+	color: #ffffff;
+
+	background-color: #849d8f; 
+
+}
+
+a {
+	color: inherit;
+	text-decoration-color: rgba(255, 255, 255, 0.2);
+}
+
+a:hover,
+a:active {
+	color: #ffbc9e;
+	text-decoration-color: rgba(255, 188, 158, 0.3);
+}
+
+/*Класс для скрывания от всех, кроме читалок*/
+
+/*  Закомментирован на время разработки
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}*/
+
+/* Кнопки */
+
+.button {
+	color: #ffffff;
+}
+
+.button:hover,
+.button:active {
+	color: #ffffff;
+}
+
+.article-button {
+	color: #ffffff;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: bold;
+
+	background-color: #e84d37;
+
+	border: none;
+}
+
+/*    Главное меню     */
+
+.main-navigation {
+	font-weight: bold;
+	line-height: 18px;
+}
+
+.user-navigation {
+	font-weight: 500;
+	line-height: 16px;
+}
+
+.main-navigation a,
+.user-navigation a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.main-navigation a {	
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.user-navigation-item button{
+	padding: 0;
+	margin: 0;
+
+	color: inherit;
+	font-weight: 500;
+
+	background-color: transparent;
+
+	border: none;
+}
+
+.main-navigation ul,
+.user-navigation {
+	list-style: none;
+}
+
+.submenu-catalog {
+	display: none;
+}
+
+.main-navigation li:hover > .submenu-catalog {
+	display: block;
+}
+
+.menu-button:hover,
+.user-navigation-item:hover {
+	color: #323232;
+
+	background-color: #f7f6f3;
+}
+
+/* Раздел Преимущества (главная)*/
+
+.advantages {
+	color: #323232;
+
+	background-color: #ece1c8;
+	background-image: url("img/waffel-pattern.jpg");
+	background-position: 0 0;
+	background-repeat: repeat;
+}
+
+.advantages-general-text {
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 500;
+}
+
+.advantages-icon {
+	font-size: 0;
+	width: 50px;
+	height: 50px;
+	background-position: top left;
+	background-repeat: no-repeat;
+}
+
+.advantages-icon-ice-cream {
+	background-image: url("img/ice-cream.svg");
+}
+
+.advantages-icon-eco {
+	background-image: url("img/eco.svg");
+}
+
+.advantages-icon-cow {
+	background-image: url("img/cow.svg");
+}
+
+.advantages-icon-thermometer {
+	background-image: url("img/thermometer.svg");
+}
+
+
+/* Новоти в блоге */
+
+.blog-news {
+	background-color: #ffffff;	
+	background-image: url("img/strawberry-bg.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.blog-news-title {
+	color: #323232;
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 500;
+}
+
+.blog-news-item {
+	color: #323232;
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: bold;
+	text-decoration-color: #353535;
+}
+
+.blog-news a:hover,
+.blog-news a:active {
+	color: #e84d37;
+	text-decoration-color: rgba(232, 77, 55, 0.3);
+}
+
+
+/* Подписка */
+
+.subscribe {
+	color: #5a5a5a;
+
+	background-color: #f8f7f4;
+
+	border-image: url("img/bg-post.svg");
+}
+
+/* Карта */
+
+.map-infobox {
+	background-color: rgba(255, 255, 255, 0.98);
+}
+
+.map-infobox p {
+	color: #323232;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.map-infobox a {
+	text-decoration: none;
+}
+
+.map-infobox .office-address {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: bold;
+}
+
+.map-infobox .phone {
+	color: #323232;
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: bold;
+}
+
+.map-infobox .working-hours {
+	font-size: 14px;
+	line-height: 22px;
+}
+
+/* Подвал */
+
+footer {
+	color: #ffffff;
+	font-size: 13px;
+	line-height: 18px;
+
+}
+
+footer ul {
+	list-style: none;
+}
+
+
+footer .suppliers {
+	font-weight: bold;
+}
+
+footer .made-in-htmlacademy {
+	font-size: 12px;
+
+}
