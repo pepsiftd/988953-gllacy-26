@@ -1,5 +1,6 @@
 body {
 	padding: 0;
+	margin: 0;
 
 	font-family: "Roboto", Arial, sans-serif;
 	font-size: 16px;
@@ -17,14 +18,14 @@ a {
 }
 
 a:hover,
-a:active {
+a:focus,
+a:active,
+ {
 	color: #ffbc9e;
 	text-decoration-color: rgba(255, 188, 158, 0.3);
 }
 
 /*Класс для скрывания от всех, кроме читалок*/
-
-/*  Закомментирован на время разработки
 
 .visually-hidden {
 	position: absolute;
@@ -35,29 +36,39 @@ a:active {
 	padding: 0;
 	clip: rect(0 0 0 0);
 	overflow: hidden;
-}*/
+}
+
+/* Скрывание модалок */
+
+.modal {
+	display: none;
+}
 
 /* Кнопки */
 
 .button {
-	color: #ffffff;
-}
+	font: inherit;
 
-.button:hover,
-.button:active {
-	color: #ffffff;
-}
-
-.article-button {
 	color: #ffffff;
 	font-size: 18px;
 	line-height: 24px;
 	font-weight: bold;
+	text-decoration: none;
+	text-align: center;
+	vertical-align: middle;
 
 	background-color: #e84d37;
 
 	border: none;
 }
+
+.button:hover,
+.button:focus,
+.button:active {
+	color: #ffffff;
+}
+
+
 
 /*    Главное меню     */
 
@@ -180,6 +191,7 @@ a:active {
 }
 
 .blog-news a:hover,
+.blog-news a:focus,
 .blog-news a:active {
 	color: #e84d37;
 	text-decoration-color: rgba(232, 77, 55, 0.3);
@@ -230,6 +242,67 @@ a:active {
 	line-height: 22px;
 }
 
+/*         */
+/* Каталог */
+/*         */
+
+/* Хлебные крошки */
+
+.breadcrumbs ul {
+	list-style: none;
+}
+
+/* Список товаров */
+
+.goods-list {
+	list-style: none;
+}
+
+.goods-list h3 {
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 500;
+
+	text-align: center;
+}
+
+.goods-list .price {
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: bold;
+
+}
+
+.goods-list p {
+	font-size: 30px;
+	line-height: 45px;
+	font-weight: bold;
+}
+
+.goods-list .rouble {
+	font-size: 0px;
+
+	width: 39px;
+	height: 45px;
+
+	background-image: url("img/ruble.svg");
+}
+
+
+/* Пагинация */
+
+.pagination {
+	list-style: none;
+}
+
+.pagination a {
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 500;
+	text-decoration: none;
+
+}
+
 /* Подвал */
 
 footer {
@@ -250,5 +323,32 @@ footer .suppliers {
 
 footer .made-in-htmlacademy {
 	font-size: 12px;
-
 }
+
+.twitter-social a,
+.instagram-social a,
+.facebook-social a,
+.vk-social a {
+	font-size: 0;
+}
+
+.twitter-social {
+	background-image: url("img/twitter.svg");
+}
+
+.instagram-social {
+	background-image: url("img/instagram.svg");
+}
+
+.facebook-social {
+	background-image: url("img/fb.svg");
+}
+
+.vk-social {
+	background-image: url("img/vk.svg");
+}
+
+.html-academy-logo {
+	background-image: url("img/logo-htmlacademy.svg");
+}
+
