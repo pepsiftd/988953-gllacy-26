@@ -12,6 +12,12 @@ body {
 
 }
 
+body.main-page {	
+	background-image: url("../img/backlight.png");
+	background-position: 50% 0;
+	background-repeat: no-repeat;
+}
+
 a {
 	color: inherit;
 	text-decoration-color: rgba(255, 255, 255, 0.2);
@@ -86,6 +92,17 @@ a:active
 	box-shadow: inset 0 2px 2px 0 #942718;
 }
 
+.main-button {
+	padding: 12px 41px;
+
+	font-size: 32px;
+	line-height: 44px;
+	text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+
+	box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
+
+	border-radius: 31px;
+}
 
 
 /*    Главное меню     */
@@ -222,6 +239,106 @@ a:active
 	color: #323232;
 
 	background-color: #f7f6f3;
+}
+
+/* Раздел слайдер */
+
+.slider ul {
+	list-style: none;	
+}
+
+.slider-item {
+	text-align: center;
+}
+
+.slider-header {
+	font-size: 60px;
+	line-height: 60.35px;
+	font-weight: bold;
+}
+
+/* Раздел горячие предложения */
+
+.hot-deals-item {
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: bold;
+}
+
+.hot-deals-title {
+	font-size: 35px;
+	line-height: 41px;
+	font-weight: bold;
+}
+
+.raspberry-deal {
+	background-color: #721329;
+	background-image: url("../img/raspberry-bg.jpg");
+	background-repeat: no-repeat;
+
+}
+
+.chocolate-deal {
+	background-color: #371a0c;
+	background-image: url("../img/chocolate-bg.jpg");
+	background-repeat: no-repeat;
+}
+
+/* Раздел хиты продаж */
+.bestsellers-list {
+	list-style: none;
+}
+
+.bestsellers-list h3 {
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 500;
+
+	text-align: center;
+}
+
+.bestsellers-list .price {
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: bold;
+
+}
+
+.bestsellers-list p {
+	font-size: 30px;
+	line-height: 45px;
+	font-weight: bold;
+}
+
+.bestsellers-list .rouble {
+	display: inline-block;
+	position: relative;
+	top: -11px;
+	left: 2px;
+
+	font-size: 0px;
+
+	width: 31px;
+	height: 36px;
+
+	background-image: url("../img/ruble.svg");
+	background-repeat: no-repeat;
+}
+
+.bestsellers-list li {
+	position: relative;
+}
+
+.bestsellers-list li::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	content: "";
+	width: 61px;
+	height: 61px;
+
+	background-image: url("../img/hit.svg");
 }
 
 /* Раздел Преимущества (главная)*/
