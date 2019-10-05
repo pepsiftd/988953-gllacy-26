@@ -47,8 +47,9 @@ a:active
 /* Кнопки */
 
 .button {
-	font: inherit;
+	padding: 12px 23px;	
 
+	font: inherit;
 	color: #ffffff;
 	font-size: 18px;
 	line-height: 24px;
@@ -58,14 +59,31 @@ a:active
 	vertical-align: middle;
 
 	background-color: #e84d37;
+	background-image: linear-gradient(#e74a35, #f26843);
+
+	box-shadow: 0 2px 2px 0 rgba(85, 8, 0, 0.54);
 
 	border: none;
+	border-radius: 23px;
 }
 
 .button:hover,
-.button:focus,
-.button:active {
+.button:focus {
 	color: #ffffff;
+
+	background-image: 
+	linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+	linear-gradient(#e74a35, #f26843);
+
+	box-shadow: 0 2px 1px 0 #ac1000;
+}
+
+.button:active {
+	background-image: 
+	    linear-gradient(rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)),
+	    linear-gradient(#e74a35, #f26843);
+
+	box-shadow: inset 0 2px 2px 0 #942718;
 }
 
 
@@ -113,6 +131,24 @@ a:active
 .main-nav-button:active {
 	box-shadow: inset 0 2px 2px 0 #696969;
 
+}
+
+.main-nav-current {
+	color: #ffffff;
+	text-decoration: none;
+	
+	background-color: #d07058;
+	border-radius: 16px;
+	box-shadow: none;
+}
+
+.main-nav-current:hover,
+.main-nav-current:focus {
+	color: #ffffff;
+	
+	background-color: #d07058;
+	border-radius: 16px;
+	box-shadow: none;
 }
 
 .user-navigation-item {
@@ -182,7 +218,6 @@ a:active
 	display: block;
 }
 
-.menu-button:hover,
 .user-navigation-item:hover {
 	color: #323232;
 
