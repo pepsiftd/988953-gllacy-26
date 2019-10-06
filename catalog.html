@@ -33,7 +33,7 @@
   		<ul class="user-navigation">
   			<li><button class="user-navigation-item search-button" type="button">Поиск</button></li>
   			<li><a class="user-navigation-item login-button" href="login.html">Войти</a></li>
-  			<li><button class="user-navigation-item basket-button" type="button" aria-label="Корзина">Пусто</button></li>
+  			<li><button class="user-navigation-item basket-button basket-not-empty" type="button" aria-label="Корзина">2 товара</button></li>
   		</ul>
 
       <section class="modal modal-search">
@@ -65,17 +65,17 @@
 				<form action="https://echo.htmlacademy.ru" method="get">
 					<p>
 						<label for="sorting">Сортировка:</label>
-						<select name="sorting" id="sorting">
+						<select class="filters-group" name="sorting" id="sorting">
 							<option value="popularity">по популярности</option>
 						</select>
 
 						<label for="price-range">Цена: 100 руб. - 500 руб.</label>
-						<input type="range" name="price-range" id="price-range" min="100" max="500" value="300">
+						<input class="filters-group" type="range" name="price-range" id="price-range" min="100" max="500" value="300">
 					</p>
 					
 					<fieldset>
 						<legend>Жирность:</legend>
-						<ul>
+						<ul class="filters-group">
 							<li>
 								<input type="radio" name="radio-fat" id="zero" value="0">
 								<label for="zero">0%</label>
@@ -100,7 +100,7 @@
 
 					<fieldset>
 						<legend>Наполнители:</legend>
-						<ul>
+						<ul class="filters-group">
 							<li>
 								<input type="checkbox" name="chocolate" id="check-chocolate" checked>
 								<label for="check-chocolate">шоколадные</label>
@@ -124,7 +124,7 @@
 						</ul>
 					</fieldset>
 
-					<input type="submit" value="Применить">
+					<input class="filters-button" type="submit" value="Применить">
 
 				</form>
 			</section>
@@ -227,12 +227,13 @@
 					</p></li>
 			</ol>
 			
+			<a class="previous-page disabled-page" href="#" aria-label="Назад">&lt;</a>
 			<ul class="pagination">
-				<li class="current-page"><a>1</a></li>
-				<li><a href="#">2</a></li>
-				<li><a href="#">3</a></li>
-				<li><a href="#">4</a></li>
-				<li><a href="#">5</a></li>
+				<li><a class="current-page">1</a></li>
+				<li><a class="page-link" href="#">2</a></li>
+				<li><a class="page-link" href="#">3</a></li>
+				<li><a class="page-link" href="#">4</a></li>
+				<li><a class="page-link" href="#">5</a></li>
 			</ul>
 			<a class="next-page" href="#" aria-label="Вперед">&gt;</a>
 

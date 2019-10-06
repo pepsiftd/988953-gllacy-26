@@ -235,7 +235,8 @@ a:active
 	display: block;
 }
 
-.user-navigation-item:hover {
+.user-navigation-item:hover,
+.user-navigation-item:focus {
 	color: #323232;
 
 	background-color: #f7f6f3;
@@ -463,6 +464,63 @@ a:active
 /* Каталог */
 /*         */
 
+/* Фильтр товаров */
+
+.filters fieldset {
+	border: none;
+}
+
+.filters ul {
+	list-style: none;	
+}
+
+.filters-group {
+	color: #ffffff;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 500;
+
+	border: none;
+
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+select.filters-group:hover {
+	color: #323232;
+}
+
+.filters-button {
+	padding-top: 9px;
+	padding-bottom: 9px;
+	padding-left: 29px;
+	padding-right: 29px;
+	margin: 0;
+
+	color: inherit;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 500;
+
+	background-color: rgba(255, 255, 255, 0.2);
+
+	box-shadow: inset 0 0 0 2px #ffffff;
+	border: none;
+	border-radius: 18px;
+}
+
+.filters-button:hover,
+.filters-button:focus {
+	color: #323232;
+
+	background-color: #f7f6f3;
+}
+
+.filters-button:active {
+
+	box-shadow: inset 0 2px 1px 0 #696969;
+	border: 2px solid #;
+}
+
 /* Хлебные крошки */
 
 .breadcrumbs ul {
@@ -518,12 +576,54 @@ a:active
 	list-style: none;
 }
 
-.pagination a {
+.pagination .page-link {
+	padding-top: 4px;
+	padding-bottom: 3px;
+	padding-left: 9px;
+	padding-right: 9px;
+
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: 500;
 	text-decoration: none;
+	
+	border-radius: 50%;
+}
 
+.pagination .page-link:hover,
+.pagination .page-link:focus,
+.pagination .page-link:active {
+	color: #ffffff;
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.pagination .current-page {
+	color: #353535;
+	padding-top: 4px;
+	padding-bottom: 3px;
+	padding-left: 9px;
+	padding-right: 9px;
+
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 500;
+	text-decoration: none;
+	
+	border-radius: 50%;
+	background-color: #eaeaea;
+}
+
+.previous-page,
+.next-page {
+	display: inline-block;
+	width: 27px;
+	height: 26px;
+
+	font-size: 0;
+
+	background-image: url("../img/icon-right-small.svg");
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 /* Подвал */
