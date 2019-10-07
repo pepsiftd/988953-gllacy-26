@@ -63,6 +63,7 @@ a:active
 	text-decoration: none;
 	text-align: center;
 	vertical-align: middle;
+	white-space: nowrap;
 
 	background-color: #e84d37;
 	background-image: linear-gradient(#e74a35, #f26843);
@@ -130,7 +131,10 @@ a:active
 }
 
 .main-nav-button {
-	padding: 7px 12px;
+	padding-top: 7px;
+	padding-bottom: 6px;
+	padding-left: 13px;
+	padding-right: 13px;
 
 	text-align: center;
 	vertical-align: middle;
@@ -220,6 +224,14 @@ a:active
 .basket-button:focus,
 .basket-button:active {
 	background-color: #f8f7f4;
+}
+
+.basket-button.basket-not-empty {
+	color: #323232;
+
+	background-color: #f8f7f4;
+	background-image: url("../img/basket-red.svg");
+	background-repeat: no-repeat;
 }
 
 .main-navigation ul,
@@ -481,6 +493,7 @@ a:active
 	font-weight: 500;
 
 	border: none;
+	border-radius: 18px;
 
 	background-color: rgba(255, 255, 255, 0.2);
 }
