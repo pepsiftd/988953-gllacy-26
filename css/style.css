@@ -717,3 +717,170 @@ footer .made-in-htmlacademy {
 	background-repeat: no-repeat;
 }
 
+
+
+/******************/
+/* Сеточные стили */
+/******************/
+
+
+.container {
+	width: 1146px;
+	margin: 0 27px;
+}
+
+/* Временно для сеток */
+body.main-page {
+	background-image: url("../img/gllacy-index.jpg");
+	background-repeat: no-repeat;
+}
+
+
+
+.page-header {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+
+/* Временно для сеток */
+	min-height: 75px;
+}
+
+.main-navigation {
+	margin-left: 22px;
+
+/* Временно для сеток */
+	min-height: 32px;
+	min-width: 350px;
+}
+
+.logo-and-nav {
+	display: flex;
+}
+
+.user-navigation {
+	padding: 0;
+
+	/* Временно для сеток */
+	min-width: 244px;
+	min-height: 32px;
+}
+
+.useful-info {
+	position: absolute;
+	bottom: -42px;
+	right: 0;
+
+	width: 165px;
+	height: 42px;
+}
+
+main {
+	padding-top: 10px;
+}
+
+.slider {
+
+		/* Временно для сеток */
+	min-height: 584px;
+
+}
+
+.hot-deals {
+	margin-top: -22px;
+	display: flex;
+	justify-content: space-between;
+
+	/* Временно для сеток */
+	min-height: 229px;
+
+}
+
+.hot-deals article {
+	width: 560px;
+
+	/* Временно для сеток */
+	background-image: none;
+	background-color: transparent;
+}
+
+.bestsellers {
+	margin-top: 40px;
+
+/* Временно для сеток */
+	min-height: 330px;
+}
+
+.advantages {
+	margin-top: 32px;
+
+/* Временно для сеток */
+	min-height: 306px;
+	background: none;
+}
+
+.blog-and-subscribe {
+	margin-top: 40px;
+	display: flex;
+	justify-content: space-between;
+
+/* Временно для сеток */
+	min-height: 220px;
+	background: none;
+}
+
+.blog-news {
+	width: 560px;
+
+	/* Временно для сеток */
+	background: none;
+}
+
+.subscribe {
+	width: 560px;
+
+	/* Временно для сеток */
+	background: none;
+}
+
+.map {
+	position: relative;
+	margin-top: 40px;
+	width: 1200px;
+
+	/* Временно для сеток */
+	min-height: 430px;
+}
+
+.map-infobox {
+	position: absolute;
+	top: 62px;
+	right: 27px;
+	width: 302px;
+	height: 305px;
+
+	/* Временно для сеток */
+	background: none;
+}
+
+footer {
+	display: flex;
+	justify-content: space-between;
+	/* Временно для сеток */
+	min-height: 103px;
+}
+
+.social {
+	/* Временно для сеток */
+	min-width: 187px;
+}
+
+.footer-nav {
+	/* Временно для сеток */
+	min-width: 328px;
+}
+
+.copyright {
+	/* Временно для сеток */
+	min-width: 190px;
+}
