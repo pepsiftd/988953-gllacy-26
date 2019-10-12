@@ -1,3 +1,4 @@
+
 body {
 	padding: 0;
 	margin: 0;
@@ -76,7 +77,7 @@ ul {
 	white-space: nowrap;
 
 	background-color: #e84d37;
-	background-image: linear-gradient(#e74a35, #f26843);
+	background-image: linear-gradient(to top, #e74a35, #f26843);
 
 	box-shadow: 0 2px 2px 0 rgba(85, 8, 0, 0.54);
 
@@ -121,6 +122,7 @@ ul {
 	position: relative;
 	display: flex;
 	justify-content: space-between;
+	margin-top: 9px;
 }
 
 .logo-and-nav {
@@ -128,7 +130,7 @@ ul {
 }
 
 .main-navigation {
-	margin-left: 22px;
+	margin-left: 10px;
 
 	font-weight: bold;
 	line-height: 18px;
@@ -145,10 +147,46 @@ ul {
 	color: inherit;
 }
 
+.main-navigation li {
+	padding-bottom: 4px;
+	margin-right: 2px;
+}
+
 .main-navigation a:hover,
 .main-navigation a:focus,
 .main-navigation a:active {
 	border-bottom: none;
+}
+
+.main-navigation ul,
+.user-navigation {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 0;
+
+	list-style: none;
+}
+
+.main-navigation ul {
+	position: relative;
+	height: 100%;
+}
+
+.main-navigation .submenu-catalog {
+	display: none;
+	position: absolute;
+}
+
+.main-navigation li:hover > .submenu-catalog {
+	display: block;
+}
+
+.user-navigation-item:hover,
+.user-navigation-item:focus {
+	color: #323232;
+
+	background-color: #f7f6f3;
 }
 
 .main-nav-button {
@@ -194,13 +232,19 @@ ul {
 }
 
 .user-navigation-item {
+	display: block;
+
 	padding-top: 7px;
 	padding-bottom: 7px;
 	padding-left: 44px;
 	padding-right: 16px;
 	margin: 0;
+	margin-bottom: 5px;
+	margin-left: 11px;
 
 	color: inherit;
+	font-size: 14px;
+	line-height: 16px;
 	font-weight: 500;
 
 	background-color: rgba(255, 255, 255, 0.2);
@@ -213,6 +257,7 @@ ul {
 	padding: 16px;
 
 	font-size: 0;
+	line-height: 0;
 
 	background-image: url("../img/loupe.svg");
 	background-repeat: no-repeat;
@@ -255,45 +300,46 @@ ul {
 	background-repeat: no-repeat;
 }
 
-.main-navigation ul,
-.user-navigation {
-	padding: 0;
-
-	list-style: none;
-}
-
-.submenu-catalog {
-	display: none;
-}
-
-.main-navigation li:hover > .submenu-catalog {
-	display: block;
-}
-
-.user-navigation-item:hover,
-.user-navigation-item:focus {
-	color: #323232;
-
-	background-color: #f7f6f3;
-}
-
 .useful-info {
 	position: absolute;
-	bottom: -42px;
-	right: 0;
+	bottom: -44px;
+	right: 27px;
 
-	width: 165px;
-	height: 42px;
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: bold;
+	text-align: right;
+	/*width: 165px;
+	height: 42px;*/
+}
+
+.useful-info a {
+	display: block;
+	margin-top: 4px;
+
+	font-size: 22px;
+	line-height: 24px;
+	font-weight: bold;
+	text-decoration: none;
 }
 
 
 /* Раздел слайдер */
 .slider {
+	position: relative;
 	margin-top: 10px;
 }
 
+.slider h2,
+.slider a {
+	position: absolute;
+	transform: translateX(-50%);
+	left: 50%;
+}
+
 .slider ul {
-	list-style: none;	
+	list-style: none;
+	padding: 0;	
 }
 
 .slider-item {
@@ -301,39 +347,64 @@ ul {
 }
 
 .slider-header {
+	width: 700px;
+	top: 259px;
+
 	font-size: 60px;
 	line-height: 60.35px;
 	font-weight: bold;
 }
 
+.slider a {
+	top: 459px;
+}
+
 /* Раздел горячие предложения */
 
 .hot-deals {
-	margin-top: -22px;
+	margin-top: -26px;
 	display: flex;
 	justify-content: space-between;
 }
 
-.hot-deals article {
-	width: 560px;
-}
-
 .hot-deals-item {
+	position: relative;
+	box-sizing: border-box;
+	width: 560px;
+	padding: 0 19px;
+
 	font-size: 18px;
 	line-height: 22px;
 	font-weight: bold;
+	min-height: 229px;
+
+	border-radius: 18px;
+}
+
+.hot-deals-item p {
+	margin: 0;
 }
 
 .hot-deals-title {
+	margin: 0;
+	margin-top: 16px;
+	margin-bottom: 15px;
+
 	font-size: 35px;
 	line-height: 41px;
 	font-weight: bold;
 }
 
+.hot-deals-item .button {
+	position: absolute;
+	right: 21px;
+	bottom: 23px;
+}
+
 .raspberry-deal {
-	background-color: #721329;
+/*	background-color: #721329;
 	background-image: url("../img/raspberry-bg.jpg");
-	background-repeat: no-repeat;
+*/	background-repeat: no-repeat;
 
 }
 
@@ -815,4 +886,11 @@ footer .made-in-htmlacademy {
 
 	background-image: url("../img/logo-htmlacademy.svg");
 	background-repeat: no-repeat;
+}
+
+/*************************/
+/*    Подкладка фона     */
+
+body.main-page {
+	background-image: url("../../gllacy-index.jpg");
 }
