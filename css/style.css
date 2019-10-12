@@ -31,9 +31,14 @@ a:active
 	text-decoration-color: rgba(255, 188, 158, 0.3);
 }
 
+ul {
+	margin: 0;
+}
+
 .container {
 	width: 1146px;
-	margin: 0 27px;
+	margin: 0 auto;
+	padding: 0 27px;
 }
 
 /*Класс для скрывания от всех, кроме читалок*/
@@ -281,11 +286,11 @@ a:active
 	height: 42px;
 }
 
-main {
-	padding-top: 10px;
-}
 
 /* Раздел слайдер */
+.slider {
+	margin-top: 10px;
+}
 
 .slider ul {
 	list-style: none;	
@@ -546,7 +551,24 @@ main {
 /* Каталог */
 /*         */
 
+/* Хлебные крошки */
+
+.breadcrumbs ul {
+	list-style: none;
+	margin-top: 20px;
+
+}
+
+.catalog-title {
+	margin: 0;
+	margin-top: 10px;
+}
+
 /* Фильтр товаров */
+
+.filters {
+	margin-top: 30px;
+}
 
 .filters fieldset {
 	border: none;
@@ -604,15 +626,15 @@ select.filters-group:hover {
 	border: 2px solid #;
 }
 
-/* Хлебные крошки */
-
-.breadcrumbs ul {
-	list-style: none;
-}
 
 /* Список товаров */
-
 .goods-list {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	margin-top: 40px;
+
 	list-style: none;
 }
 
@@ -656,6 +678,12 @@ select.filters-group:hover {
 /* Пагинация */
 
 .pagination {
+	padding: 0;
+	margin-top: 80px;
+	padding-bottom: 30px;
+
+	border-bottom: 1px solid rgba(234, 234, 234, 0.3);
+
 	list-style: none;
 }
 

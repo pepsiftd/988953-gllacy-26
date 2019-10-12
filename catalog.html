@@ -8,43 +8,47 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-  	<header>  		  
-			<a href="index.html" aria-label="Главная страница магазина Глейси">
-    		<img src="img/logo.svg" width="158" height="70" alt="Логотип магазина Глейси">
-  		</a>  		
-  		<nav class="main-navigation">
-	  		<ul>
-	  			<li>
-            <a class="main-nav-button main-nav-current" href="catalog.html">Каталог</a>
-            <ul class="submenu-catalog">
-              <li><a href="#">Новинки</a></li>
-              <li><a href="catalog.html">Сливочное</a></li>
-              <li><a href="#">Щербеты</a></li>
-              <li><a href="#">Фруктовый лед</a></li>
-              <li><a href="#">Мелорин</a></li>
-            </ul>    
-          </li>
+  	<header class="page-header container">    
+      <div class="logo-and-nav">  
+        <a href="index.html" aria-label="Главная страница магазина Глейси">
+    			<img src="img/logo.svg" width="158" height="70" alt="Логотип магазина Глейси">
+  			</a> 
+    		<nav class="main-navigation">
+          <ul>
+		  			<li>
+	            <a class="main-nav-button main-nav-current" href="catalog.html">Каталог</a>
+	            <ul class="submenu-catalog">
+	              <li><a href="#">Новинки</a></li>
+	              <li><a href="catalog.html">Сливочное</a></li>
+	              <li><a href="#">Щербеты</a></li>
+	              <li><a href="#">Фруктовый лед</a></li>
+	              <li><a href="#">Мелорин</a></li>
+	            </ul>    
+	          </li>
 
-	  			<li><a class="main-nav-button" href="delivery.html">Доставка и оплата</a></li>
-	  			<li><a class="main-nav-button" href="about.html">О Компании</a></li>
-	  		</ul>
-			</nav>
+		  			<li><a class="main-nav-button" href="delivery.html">Доставка и оплата</a></li>
+		  			<li><a class="main-nav-button" href="about.html">О Компании</a></li>
+		  		</ul>
+        </nav>
+      </div>
 
-  		<ul class="user-navigation">
+      <ul class="user-navigation">
   			<li><button class="user-navigation-item search-button" type="button">Поиск</button></li>
   			<li><a class="user-navigation-item login-button" href="login.html">Войти</a></li>
   			<li><button class="user-navigation-item basket-button basket-not-empty" type="button" aria-label="Корзина">2 товара</button></li>
-  		</ul>
-
+      </ul>
+      <div class="useful-info">
+      </div>
       <section class="modal modal-search">
         <h2 class="visually-hidden">Поиск по сайту</h2>
         <form action="https://echo.htmlacademy.ru" method="post">          
           <input type="search" name="searchline" id="searchline" placeholder="Что ищем?" aria-label="Строка поиска">
         </form>
       </section>
+
   	</header>
 
-		<main>			
+		<main class="container">			
 			<div class="breadcrumbs">
 				<ul>
 					<li><a href="index.html">Главная</a></li>
@@ -53,82 +57,81 @@
 				</ul>
 			</div>
 
-			<div class="useful-info">
-				С 10 до 20, ежедневно
-        <a href="tel:+78124502525" aria-label="Контактный телефон">8 812 450-25-25</a>
-			</div>
 
-			<h1>Сливочное мороженое</h1>
+			<h1 class="catalog-title">Сливочное мороженое</h1>
 
 			<section class="filters">
 				<h2 class="visually-hidden">Фильтры товаров</h2>
 				<form action="https://echo.htmlacademy.ru" method="get">
-					<p>
-						<label for="sorting">Сортировка:</label>
-						<select class="filters-group" name="sorting" id="sorting">
-							<option value="popularity">по популярности</option>
-						</select>
+					<div class="filters-section">
+						<div>
+							<label for="sorting">Сортировка:</label>
+							<select class="filters-group" name="sorting" id="sorting">
+								<option value="popularity">по популярности</option>
+							</select>
 
-						<label for="price-range">Цена: 100 руб. - 500 руб.</label>
-						<input class="filters-group" type="range" name="price-range" id="price-range" min="100" max="500" value="300">
-					</p>
-					
-					<fieldset>
-						<legend>Жирность:</legend>
-						<ul class="filters-group">
-							<li>
-								<input type="radio" name="radio-fat" id="zero" value="0">
-								<label for="zero">0%</label>
-							</li>
+							<label for="price-range">Цена: 100 руб. - 500 руб.</label>
+							<input class="filters-group" type="range" name="price-range" id="price-range" min="100" max="500" value="300">
+						</div>
 
-							<li>
-								<input type="radio" name="radio-fat" id="under-10" value="under-10" checked>
-								<label for="under-10">до 10%</label>
-							</li>
+						<fieldset>
+							<legend>Жирность:</legend>
+							<ul class="filters-group">
+								<li>
+									<input type="radio" name="radio-fat" id="zero" value="0">
+									<label for="zero">0%</label>
+								</li>
 
-							<li>
-								<input type="radio" name="radio-fat" id="under-30" value="under-30">
-								<label for="under-30">до 30%</label>
-							</li>
+								<li>
+									<input type="radio" name="radio-fat" id="under-10" value="under-10" checked>
+									<label for="under-10">до 10%</label>
+								</li>
 
-							<li>
-								<input type="radio" name="radio-fat" id="over-30" value="over-30">
-								<label for="over-30">выше 30%</label>
-							</li>
-						</ul>
-					</fieldset>
+								<li>
+									<input type="radio" name="radio-fat" id="under-30" value="under-30">
+									<label for="under-30">до 30%</label>
+								</li>
 
-					<fieldset>
-						<legend>Наполнители:</legend>
-						<ul class="filters-group">
-							<li>
-								<input type="checkbox" name="chocolate" id="check-chocolate" checked>
-								<label for="check-chocolate">шоколадные</label>
-							</li>
-							<li>
-								<input type="checkbox" name="sugar-top" id="check-sugar-top" checked>
-								<label for="check-sugar-top">сахарные присыпки</label>
-							</li>
-							<li>
-								<input type="checkbox" name="fruit" id="check-fruit">
-								<label for="check-fruit">фрукты</label>
-							</li>
-							<li>
-								<input type="checkbox" name="syrup" id="check-syrup">
-								<label for="check-syrup">сиропы</label>
-							</li>
-							<li>
-								<input type="checkbox" name="jam" id="check-jam">
-								<label for="check-jam">джемы</label>
-							</li>
-						</ul>
-					</fieldset>
+								<li>
+									<input type="radio" name="radio-fat" id="over-30" value="over-30">
+									<label for="over-30">выше 30%</label>
+								</li>
+							</ul>
+						</fieldset>
+					</div>
 
-					<input class="filters-button" type="submit" value="Применить">
+					<div class="filters-section">	
+						<fieldset>
+							<ul class="filters-group">
+								<li>
+									<input type="checkbox" name="chocolate" id="check-chocolate" checked>
+									<label for="check-chocolate">шоколадные</label>
+								</li>
+								<li>
+									<input type="checkbox" name="sugar-top" id="check-sugar-top" checked>
+									<label for="check-sugar-top">сахарные присыпки</label>
+								</li>
+								<li>
+									<input type="checkbox" name="fruit" id="check-fruit">
+									<label for="check-fruit">фрукты</label>
+								</li>
+								<li>
+									<input type="checkbox" name="syrup" id="check-syrup">
+									<label for="check-syrup">сиропы</label>
+								</li>
+								<li>
+									<input type="checkbox" name="jam" id="check-jam">
+									<label for="check-jam">джемы</label>
+								</li>
+							</ul>
+						</fieldset>
+
+						<input class="filters-button" type="submit" value="Применить">
+					</div>
 
 				</form>
 			</section>
-
+ 
 			<ol class="goods-list">
 				<li>
 					<a href="#">
@@ -227,15 +230,17 @@
 					</p></li>
 			</ol>
 			
-			<a class="previous-page disabled-page" href="#" aria-label="Назад">&lt;</a>
+			
 			<ul class="pagination">
+				<li><a class="previous-page disabled-page" href="#" aria-label="Назад">&lt;</a></li>
 				<li><a class="current-page">1</a></li>
 				<li><a class="page-link" href="#">2</a></li>
 				<li><a class="page-link" href="#">3</a></li>
 				<li><a class="page-link" href="#">4</a></li>
 				<li><a class="page-link" href="#">5</a></li>
+				<li><a class="next-page" href="#" aria-label="Вперед">&gt;</a></li>
 			</ul>
-			<a class="next-page" href="#" aria-label="Вперед">&gt;</a>
+			
 
 			<section class="modal modal-basket">
 				<h2 class="visually-hidden">Список товаров в корзине</h2>
@@ -263,32 +268,32 @@
 
 		</main>
 
-  	<footer>
-  		<div class="social">
-  			<ul>
-  				<li><a href="#">Twitter</a></li>
-  				<li><a href="#">Instagram</a></li>
-  				<li><a href="#">Facebook</a></li>
-  				<li><a href="#">Вконтакте</a></li>
-  			</ul>
+  	<footer class="container">
+      <div class="social">
+        <ul>
+          <li><a class="social-button twitter-social" href="#">Twitter</a></li>
+          <li><a class="social-button instagram-social" href="#">Instagram</a></li>
+          <li><a class="social-button facebook-social" href="#">Facebook</a></li>
+          <li><a class="social-button vk-social" href="#">Вконтакте</a></li>
+        </ul>
+      </div>
+
+  		<div class="footer-nav">
+        <ul>
+            <li><a class="suppliers" href="#">Для поставщиков</a></li>
+            <li><a href="#">О производстве</a></li>
+        </ul>
+      
+        <ul>
+          <li><a href="#">Наши документы</a></li>
+          <li><a href="#">Экологические стандарты</a></li>
+        </ul>
   		</div>
 
-  		<div>
-  			<ul>
-  					<li><a class="suppliers" href="#">Для поставщиков</a></li>
-  					<li><a href="#">О производстве</a></li>
-				</ul>
-			
-				<ul>
-					<li><a href="#">Наши документы</a></li>
-					<li><a href="#">Экологические стандарты</a></li>
-				</ul>  			
+  		<div class="copyright">
+        <a href="https://htmlacademy.ru/intensive/htmlcss" class="html-academy-logo">HTML Academy</a>
+        <span class="made-in-htmlacademy"> Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2017</span>
   		</div>
-
-  		<p>
-  			<a href="https://htmlacademy.ru/intensive/htmlcss" class="html-academy-logo">HTML Academy</a>
-  			<span class="made-in-htmlacademy"> Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2017</span>
-  		</p>
   	</footer>
   </body>
 </html>
