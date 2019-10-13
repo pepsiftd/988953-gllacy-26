@@ -117,15 +117,26 @@
         <section class="advantages">
           <h2 class="visually-hidden">Наши преимущества</h2>
           <p class="advantages-general-text">Магазин Глэйси - это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
-          <dl>
-            <dt class="advantages-icon advantages-icon-ice-cream">Собственное производство</dt>
-            <dd class="advantages-item">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</dd>
-            <dt class="advantages-icon advantages-icon-eco">Высочайшее качество</dt>
-            <dd class="advantages-item">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</dd>
-            <dt class="advantages-icon advantages-icon-cow">Проверенные поставщики</dt>
-            <dd class="advantages-item">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</dd>
-            <dt class="advantages-icon advantages-icon-thermometer">Правильная доставка</dt>
-            <dd class="advantages-item">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</dd>
+          <dl class="advantages-list">
+            <div class="advantages-item">
+              <dt class="advantages-icon advantages-icon-ice-cream">Собственное производство</dt>
+              <dd class="advantages-text">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</dd>
+            </div>
+            
+            <div class="advantages-item">
+              <dt class="advantages-icon advantages-icon-cow">Проверенные поставщики</dt>
+              <dd class="advantages-text">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</dd>
+            </div>
+
+            <div class="advantages-item">
+              <dt class="advantages-icon advantages-icon-eco">Высочайшее качество</dt>
+              <dd class="advantages-text">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</dd>
+            </div>
+            
+            <div class="advantages-item">
+              <dt class="advantages-icon advantages-icon-thermometer">Правильная доставка</dt>
+              <dd class="advantages-text">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</dd>
+            </div>
           </dl>
         </section>
 
@@ -140,7 +151,7 @@
             <p class="subscribe-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
             <form action="https://echo.htmlacademy.ru" method="post">
               <label for="input-email" class="visually-hidden">Ваша электронная почта</label>
-              <input type="email" name="email" id="input-email" placeholder="email@example.com">
+              <input class="subscribe-email-input" type="email" name="email" id="input-email" placeholder="email@example.com">
               <button type="submit" class="button">Отправить</button>
             </form>       
           </section>
@@ -149,10 +160,10 @@
 
       <section class="map">
         <h2 class="visually-hidden">Как нас найти</h2>
-        <a href="#"><img src="img/map.png" width="1200" height="430" alt="Карта проезда к магазину Глэйси по адресу Санкт-Петербург, ул. Большая Конюшенная 19/8"></a>
+        <a class="map-link" href="#"><img class="map-image" src="img/map.png" width="1200" height="640" alt="Карта проезда к магазину Глэйси по адресу Санкт-Петербург, ул. Большая Конюшенная 19/8"></a>
         <div class="map-infobox">
           <p>
-            Адрес главного офиса и офлайн-магазина:
+            Адрес главного офиса<br> и офлайн-магазина:
             <span class="office-address">ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
           </p>
 
@@ -162,7 +173,7 @@
             <span class="working-hours">(с 10 до 20 ежедневно)</span>
           </p>
 
-          <a class="button" href="#">Форма обратной связи</a>
+          <a class="button feedback-button" href="#">Форма обратной связи</a>
         </div>
       </section>
 
@@ -219,7 +230,7 @@
 
   		<div class="copyright">
         <a href="https://htmlacademy.ru/intensive/htmlcss" class="html-academy-logo">HTML Academy</a>
-        <span class="made-in-htmlacademy"> Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2017</span>
+        <span class="made-in-htmlacademy"> Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2019</span>
   		</div>
   	</footer>
   </body>
