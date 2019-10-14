@@ -10,6 +10,9 @@ body {
 	color: #ffffff;
 
 	background-color: #849d8f; 
+	background-image: url("../img/backlight-catalog.png");
+	background-position: 50% 0;
+	background-repeat: repeat-x;
 
 }
 
@@ -128,6 +131,11 @@ ul {
 
 .logo-and-nav {
 	display: flex;
+}
+
+.gllacy-logo-link {
+	font-size: 0;
+	line-height: 0;
 }
 
 .main-navigation {
@@ -778,23 +786,81 @@ ul {
 /* Хлебные крошки */
 
 .breadcrumbs ul {
-	list-style: none;
-	margin-top: 20px;
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
 
+	padding: 0;
+	margin: 0;
+	margin-top: 25px;
+
+	list-style: none;
+
+	font-size: 14px;
+	line-height: 16px;
 }
+
+.breadcrumbs li {
+	position: relative;
+
+	margin-right: 21px;
+}
+
+.breadcrumbs li::after {
+	content: "»";
+
+	position: absolute;
+	right: -14px;
+}
+
+.breadcrumbs-current {
+	margin-right: 0;
+}
+
+.breadcrumbs-current::after {
+	display: none;
+}
+
 
 .catalog-title {
 	margin: 0;
-	margin-top: 10px;
+	margin-top: 5px;
+
+	font-size: 35px;
+	line-height: 41px;
 }
 
 /* Фильтр товаров */
 
 .filters {
-	margin-top: 30px;
+	margin-top: 26px;
+}
+
+.filters form {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	width: 860px;
+	height: 150px;
+}
+
+.filters-section {
+	height: 58px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.filters label {
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 500;
 }
 
 .filters fieldset {
+	padding: 0;
+	margin: 0;
 	border: none;
 }
 
@@ -802,7 +868,20 @@ ul {
 	list-style: none;	
 }
 
+.filters-group-label {
+	padding-left: 15px;
+	padding-right: 15px;
+
+	font-size: 14px;
+	line-height: 16px;
+}
+
 .filters-group {
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	height: 36px;
+
 	color: #ffffff;
 	font-size: 16px;
 	line-height: 18px;
@@ -814,8 +893,27 @@ ul {
 	background-color: rgba(255, 255, 255, 0.2);
 }
 
-select.filters-group:hover {
+.sorting-select {
+	width: 193px;
+	height: 36px;
+	padding-left: 12px;
+	padding-right: 20px;
+}
+
+.sorting-select:hover {
 	color: #323232;
+}
+
+.price-range {
+	width: 219px;
+}
+
+.fat-select {
+	width: 420px;
+}
+
+.fillers-select {
+	width: 702px;
 }
 
 .filters-button {
@@ -1083,3 +1181,9 @@ footer .made-in-htmlacademy {
 body.main-page {
 	background-image: url("../../gllacy-index.jpg");
 }*/
+
+body {
+	background-image: url("../../gllacy-catalog.jpg");
+	background-repeat: no-repeat;
+	background-position: left 50% top 0;
+}

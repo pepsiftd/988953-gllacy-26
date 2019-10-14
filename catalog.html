@@ -10,7 +10,7 @@
   <body>
   	<header class="page-header container">    
       <div class="logo-and-nav">  
-        <a href="index.html" aria-label="Главная страница магазина Глейси">
+        <a class="gllacy-logo-link" href="index.html" aria-label="Главная страница магазина Глейси">
     			<img src="img/logo.svg" width="154" height="64" alt="Логотип магазина Глейси">
   			</a> 
     		<nav class="main-navigation">
@@ -38,6 +38,8 @@
   			<li><button class="user-navigation-item basket-button basket-not-empty" type="button" aria-label="Корзина">2 товара</button></li>
       </ul>
       <div class="useful-info">
+        С 10 до 20, ежедневно
+        <a href="tel:+78124502525" aria-label="Контактный телефон">8 812 450-25-25</a>
       </div>
       <section class="modal modal-search">
         <h2 class="visually-hidden">Поиск по сайту</h2>
@@ -53,7 +55,7 @@
 				<ul>
 					<li><a href="index.html">Главная</a></li>
 					<li><a href="catalog.html">Каталог</a></li>
-					<li>Сливочное</li>
+					<li class="breadcrumbs-current">Сливочное</li>
 				</ul>
 			</div>
 
@@ -64,71 +66,71 @@
 				<h2 class="visually-hidden">Фильтры товаров</h2>
 				<form action="https://echo.htmlacademy.ru" method="get">
 					<div class="filters-section">
-						<div>
-							<label for="sorting">Сортировка:</label>
-							<select class="filters-group" name="sorting" id="sorting">
-								<option value="popularity">по популярности</option>
-							</select>
-
-							<label for="price-range">Цена: 100 руб. - 500 руб.</label>
-							<input class="filters-group" type="range" name="price-range" id="price-range" min="100" max="500" value="300">
-						</div>
-
-						<fieldset>
-							<legend>Жирность:</legend>
-							<ul class="filters-group">
-								<li>
-									<input type="radio" name="radio-fat" id="zero" value="0">
-									<label for="zero">0%</label>
-								</li>
-
-								<li>
-									<input type="radio" name="radio-fat" id="under-10" value="under-10" checked>
-									<label for="under-10">до 10%</label>
-								</li>
-
-								<li>
-									<input type="radio" name="radio-fat" id="under-30" value="under-30">
-									<label for="under-30">до 30%</label>
-								</li>
-
-								<li>
-									<input type="radio" name="radio-fat" id="over-30" value="over-30">
-									<label for="over-30">выше 30%</label>
-								</li>
-							</ul>
-						</fieldset>
+						<label class="filters-group-label" for="sorting">Сортировка:</label>
+						<select class="sorting-select filters-group" name="sorting" id="sorting">
+							<option value="popularity">по популярности</option>
+						</select>
 					</div>
 
-					<div class="filters-section">	
-						<fieldset>
-							<ul class="filters-group">
-								<li>
-									<input type="checkbox" name="chocolate" id="check-chocolate" checked>
-									<label for="check-chocolate">шоколадные</label>
-								</li>
-								<li>
-									<input type="checkbox" name="sugar-top" id="check-sugar-top" checked>
-									<label for="check-sugar-top">сахарные присыпки</label>
-								</li>
-								<li>
-									<input type="checkbox" name="fruit" id="check-fruit">
-									<label for="check-fruit">фрукты</label>
-								</li>
-								<li>
-									<input type="checkbox" name="syrup" id="check-syrup">
-									<label for="check-syrup">сиропы</label>
-								</li>
-								<li>
-									<input type="checkbox" name="jam" id="check-jam">
-									<label for="check-jam">джемы</label>
-								</li>
-							</ul>
-						</fieldset>
+					<div class="filters-section">
+						<label class="filters-group-label" for="price-range">Цена: 100 руб. - 500 руб.</label>
+						<input class="price-range filters-group" type="range" name="price-range" id="price-range" min="100" max="500" value="300">
+					</div>
 
+					<fieldset class="fat-select filters-section">
+						<legend class="filters-group-label">Жирность:</legend>
+						<ul class="filters-group">
+							<li>
+								<input type="radio" name="radio-fat" id="zero" value="0">
+								<label for="zero">0%</label>
+							</li>
+
+							<li>
+								<input type="radio" name="radio-fat" id="under-10" value="under-10" checked>
+								<label for="under-10">до 10%</label>
+							</li>
+
+							<li>
+								<input type="radio" name="radio-fat" id="under-30" value="under-30">
+								<label for="under-30">до 30%</label>
+							</li>
+
+							<li>
+								<input type="radio" name="radio-fat" id="over-30" value="over-30">
+								<label for="over-30">выше 30%</label>
+							</li>
+						</ul>
+					</fieldset>
+
+					<fieldset class="filters-section">
+						<legend class="filters-group-label">Наполнители:</legend>
+						<ul class="fillers-select filters-group">
+							<li>
+								<input type="checkbox" name="chocolate" id="check-chocolate" checked>
+								<label for="check-chocolate">шоколадные</label>
+							</li>
+							<li>
+								<input type="checkbox" name="sugar-top" id="check-sugar-top" checked>
+								<label for="check-sugar-top">сахарные присыпки</label>
+							</li>
+							<li>
+								<input type="checkbox" name="fruit" id="check-fruit">
+								<label for="check-fruit">фрукты</label>
+							</li>
+							<li>
+								<input type="checkbox" name="syrup" id="check-syrup">
+								<label for="check-syrup">сиропы</label>
+							</li>
+							<li>
+								<input type="checkbox" name="jam" id="check-jam">
+								<label for="check-jam">джемы</label>
+							</li>
+						</ul>
+					</fieldset>
+
+					<div class="filters-section">
 						<input class="filters-button" type="submit" value="Применить">
 					</div>
-
 				</form>
 			</section>
  
