@@ -850,7 +850,7 @@ ul {
 	align-items: flex-start;
 	flex-wrap: wrap;
 	width: 860px;
-	height: 150px;
+	height: 148px;
 }
 
 .filters-section {
@@ -877,8 +877,9 @@ ul {
 }
 
 .filters-group-label {
-	padding-left: 15px;
+	padding-left: 16px;
 	padding-right: 15px;
+	margin-bottom: 6px;
 
 	font-size: 14px;
 	line-height: 16px;
@@ -886,9 +887,12 @@ ul {
 
 .filters-group {
 	display: flex;
-	justify-content: flex-start;
+	justify-content: space-around;
+	align-items: center;
 	flex-wrap: wrap;
 	height: 36px;
+
+	padding: 0;
 
 	color: #ffffff;
 	font-size: 16px;
@@ -901,27 +905,27 @@ ul {
 	background-color: rgba(255, 255, 255, 0.2);
 }
 
-.sorting-select {
+.filters .sorting-select {
 	width: 193px;
 	height: 36px;
 	padding-left: 12px;
 	padding-right: 20px;
 }
 
-.sorting-select:hover {
+.filters .sorting-select:hover {
 	color: #323232;
 }
 
-.price-range {
+.filters .price-range {
 	width: 219px;
 }
 
-.fat-select {
+.filters .fat-select {
 	width: 415px;
-	margin-right: 5px;
+	margin-right: 4px;
 }
 
-.fillers-select {
+.filters .fillers-select {
 	width: 702px;
 }
 
@@ -959,17 +963,36 @@ ul {
 
 
 /* Список товаров */
+
 .goods-list {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-between;
 	margin: 0;
 	padding: 0;
-	margin-top: 40px;
+	margin-top: 25px;
 
 	list-style: none;
 }
 
+.goods-list-item {
+	position: relative;
+	width: 267px;
+	margin-bottom: 37px;
+
+}
+
+.goods-list-item a {
+	display: flex;
+	flex-direction: column-reverse;
+	align-items: center;
+}
+
 .goods-list h3 {
+	margin: 0;
+	margin-top: 13px;
+	max-width: 257px;
+
 	font-size: 16px;
 	line-height: 22px;
 	font-weight: 500;
@@ -985,13 +1008,20 @@ ul {
 }
 
 .goods-list p {
+	position: absolute;
+	top: 179px;
+	left: -2px;
+	margin: 0;
+
 	font-size: 30px;
 	line-height: 45px;
 	font-weight: bold;
+	text-shadow: 1px 1px 3px rgba(49, 50, 53, 0.5);
 }
 
 .goods-list .rouble {
 	display: inline-block;
+	vertical-align: baseline;
 	position: relative;
 	top: -11px;
 	left: 2px;
@@ -1009,9 +1039,12 @@ ul {
 /* Пагинация */
 
 .pagination {
+	display: flex;
+	justify-content: flex-end;
+
 	padding: 0;
-	margin-top: 80px;
-	padding-bottom: 30px;
+	margin-top: 47px;
+	padding-bottom: 22px;
 
 	border-bottom: 1px solid rgba(234, 234, 234, 0.3);
 
@@ -1023,6 +1056,7 @@ ul {
 	padding-bottom: 3px;
 	padding-left: 9px;
 	padding-right: 9px;
+	margin-left: 2px;
 
 	font-size: 16px;
 	line-height: 18px;
@@ -1064,8 +1098,15 @@ ul {
 	font-size: 0;
 
 	background-image: url("../img/icon-right-small.svg");
-	background-position: center;
+	background-position: left 50% top 0;
 	background-repeat: no-repeat;
+}
+
+.next-page {
+	width: 17px;
+	margin-left: 7px;
+
+	background-position: right 0 top 0;
 }
 
 /* Подвал */
@@ -1191,8 +1232,8 @@ body.main-page {
 	background-image: url("../../gllacy-index.jpg");
 }*/
 
-body {
+/*body {
 	background-image: url("../../gllacy-catalog.jpg");
 	background-repeat: no-repeat;
 	background-position: left 50% top 0;
-}
+}*/
