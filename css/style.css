@@ -184,15 +184,18 @@ ul {
 
 
 .main-navigation .submenu-catalog {
-	/*display: none;*/
+	display: none;
+	z-index: 1;
 	position: absolute;
-	top: 65%;
-	left: 0;
+	top: 50px;
+	left: -7px;
 	padding: 0;
 
 	list-style: none;
 
 	background-color: #f8f7f4;
+
+	box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
 
 	border-radius: 5px;
 }
@@ -208,6 +211,20 @@ ul {
 	font-weight: 400;
 }
 
+.submenu-item:hover {
+	background-color: #fbded7;
+}
+
+.submenu-item:active {
+	background-color: #f6b5a5;
+}
+
+.submenu-item.submenu-item-current {
+	color: #ffffff;
+
+	background-color: #d07058;
+}
+
 .submenu-item:first-child a {
 	font-weight: bold;
 	border-bottom: 1px solid rgba(53, 53, 53, 0.2);
@@ -215,9 +232,8 @@ ul {
 
 .submenu-item a {
 	display: block;
-	padding-left: 15px;
-	height: 28px;
-	vertical-align: middle;
+	padding: 6px 15px;
+	margin: 5px 0;
 	text-decoration: none;
 }
 
