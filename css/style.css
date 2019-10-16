@@ -982,6 +982,42 @@ ul {
 	width: 25%;
 	margin-bottom: 37px;
 
+	text-align: center;
+}
+
+.goods-list-item::before {
+	display: none;
+	z-index: -1;
+	content: "";
+	position: absolute;
+	top: -6px;
+	width: 100%;
+	height: 125%;
+
+	background-color: rgba(248, 247, 244, 0.2);
+
+	box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+
+	border-radius: 5px;
+}
+
+.quick-view-button {
+	display: none;
+	position: absolute;
+	bottom: -18.2%;
+	left: 50%;
+	transform: translateX(-50%);
+
+	padding: 10px 17px;
+}
+
+.goods-list-item:hover {
+	z-index: 1;
+}
+
+.goods-list-item:hover::before,
+.goods-list-item:hover .quick-view-button {
+	display: block;
 }
 
 .goods-list-item a {
