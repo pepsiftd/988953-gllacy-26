@@ -971,13 +971,15 @@ ul {
 	margin: 0;
 	padding: 0;
 	margin-top: 25px;
+	margin-left: -15px;
+	margin-right: -15px;
 
 	list-style: none;
 }
 
 .goods-list-item {
 	position: relative;
-	width: 267px;
+	width: 25%;
 	margin-bottom: 37px;
 
 }
@@ -991,7 +993,7 @@ ul {
 .goods-list h3 {
 	margin: 0;
 	margin-top: 13px;
-	max-width: 257px;
+	max-width: 87%;
 
 	font-size: 16px;
 	line-height: 22px;
@@ -1009,8 +1011,8 @@ ul {
 
 .goods-list p {
 	position: absolute;
-	top: 179px;
-	left: -2px;
+	top: 209px;
+	left: 12px;
 	margin: 0;
 
 	font-size: 30px;
@@ -1098,15 +1100,19 @@ ul {
 	font-size: 0;
 
 	background-image: url("../img/icon-right-small.svg");
-	background-position: left 50% top 0;
 	background-repeat: no-repeat;
 }
 
+.previous-page {
+	background-position: left 70% bottom 0;
+	transform: rotate(180deg);
+}
+
 .next-page {
-	width: 17px;
+	margin-right: -10px;
 	margin-left: 7px;
 
-	background-position: right 0 top 0;
+	background-position: left 50% top 0;
 }
 
 /* Подвал */
