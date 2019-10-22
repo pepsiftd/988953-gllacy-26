@@ -454,12 +454,6 @@ ul {
 	margin-right: 2px;
 }
 
-.main-navigation a:hover,
-.main-navigation a:focus,
-.main-navigation a:active {
-	border-bottom: none;
-}
-
 .main-navigation-list,
 .user-navigation {
 	display: flex;
@@ -548,6 +542,7 @@ ul {
 .main-nav-button:focus {
 	color: #323232;
 
+	outline: none;
 	background-color: #f7f6f3;
 	text-decoration: none;
 	border-radius: 16px;
@@ -577,15 +572,14 @@ ul {
 	box-shadow: none;
 }
 
+.main-nav-current:focus {
+	box-shadow: 0 0 2px 2px rgba(117, 161, 210, 0.7);
+}
+
 .user-navigation-item {
 	display: block;
 	box-sizing: border-box;
-/*
-	padding-top: 7px;
-	padding-bottom: 7px;
-	padding-left: 44px;
-	padding-right: 16px;
-*/
+
 	margin: 0;
 	margin-bottom: 5px;
 	margin-left: 11px;
@@ -644,6 +638,7 @@ ul {
 .user-navigation-item:active {
 	color: #323232;
 	background-color: #f8f7f4;
+	outline: none;
 }
 
 .user-navigation-item:hover path,
@@ -660,6 +655,10 @@ ul {
 	background-color: #f8f7f4;
 	background-image: url("../img/basket-red.svg");
 	background-repeat: no-repeat;
+}
+
+.basket-button:focus {
+	box-shadow: 0 0 2px 2px rgba(117, 161, 210, 0.7);
 }
 
 .useful-info {
@@ -1206,12 +1205,6 @@ ul {
 	justify-content: flex-end;
 }
 
-.filters label {
-	font-size: 14px;
-	line-height: 16px;
-	font-weight: 500;
-}
-
 .filters fieldset {
 	padding: 0;
 	margin: 0;
@@ -1229,6 +1222,7 @@ ul {
 
 	font-size: 14px;
 	line-height: 16px;
+	font-weight: 500;
 }
 
 .filters-group {
@@ -1258,8 +1252,14 @@ ul {
 	padding-right: 20px;
 }
 
-.filters .sorting-select:hover {
+.filters .sorting-select:hover,
+.filters .sorting-select:focus {
 	color: #323232;
+	outline: none;
+}
+
+.filters .sorting-select:focus {
+	box-shadow: 0 0 2px 2px rgba(117, 161, 210, 0.7);
 }
 
 .filters .filter-range {
@@ -1317,6 +1317,65 @@ ul {
 	width: 702px;
 }
 
+.filter-option label {
+	position: relative;
+	padding-left: 30px;
+}
+
+.fillers-select .filters-group,
+.fat-select .filters-group {
+	padding: 0 5px;
+}
+.filter-input + label::before{
+	content: "";
+	display: block;
+	position: absolute;
+	background-repeat: no-repeat;
+	background-size: contain;
+	opacity: 0.8;
+}
+
+.filter-input + label:hover::before,
+.filter-input:focus + label::before {
+	opacity: 1;
+}
+
+.filter-input:disabled + label::before {
+	opacity: 0.4;
+}
+
+.filter-input-radio + label::before {
+	width: 22px;
+	height: 22px;
+	left: -2px;
+	top: -1px;
+	
+	background-image: url("../img/radio-off.svg");
+}
+
+.filter-input-checkbox + label::before {
+	width: 20px;
+	height: 20px;
+	left: -2px;
+	top: 0px;
+	
+	background-image: url("../img/checkbox-off.svg");
+}
+
+.filter-input-radio:checked + label::before {
+	background-image: url("../img/radio-on.svg");
+}
+
+.filter-input-checkbox:checked + label::before {
+	width: 25px;
+	background-image: url("../img/checkbox-on.svg");
+}
+
+/* Обводка для фокуса - какая-то нужна, но эта выглядит плохо при работе мышкой */
+/*.filter-input:focus + label {
+	box-shadow: 0 0 2px 2px rgba(117, 161, 210, 0.7);
+}*/
+
 .filters-button {
 	padding-top: 9px;
 	padding-bottom: 9px;
@@ -1343,8 +1402,12 @@ ul {
 	background-color: #f7f6f3;
 }
 
-.filters-button:active {
+.filters-button:focus {
+	outline: none;
+	box-shadow: 0 0 2px 2px rgba(117, 161, 210, 0.7);
+}
 
+.filters-button:active {
 	box-shadow: inset 0 2px 1px 0 #696969;
 	border: 2px solid #;
 }
@@ -1671,3 +1734,4 @@ footer .made-in-htmlacademy {
 	background-image: url("../img/logo-htmlacademy.svg");
 	background-repeat: no-repeat;
 }
+
