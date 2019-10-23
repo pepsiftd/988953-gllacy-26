@@ -69,6 +69,10 @@ ul {
 	display: none;
 }
 
+.modal-show {
+	display: block;
+}
+
 .form-input {
 	box-sizing: border-box;
 	padding: 0 14px;
