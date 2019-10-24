@@ -50,7 +50,7 @@
       <section class="modal modal-search">
         <h2 class="visually-hidden">Поиск по сайту</h2>
         <form action="https://echo.htmlacademy.ru" method="post">          
-          <input class="search-input" type="search" name="searchline" id="searchline" placeholder="Крем-брюле" aria-label="Строка поиска">
+          <input class="form-input search-input" type="search" name="searchline" id="searchline" placeholder="Крем-брюле" aria-label="Строка поиска">
         </form>
       </section>
 
@@ -306,6 +306,22 @@
 				</form>
 			</section>
 
+			<section class="modal modal-login">
+        <h2 class="visually-hidden">Личный кабинет</h2>
+        <form action="https://echo.htmlacademy.ru" method="post">          
+          <label class="visually-hidden" for="login-email">Электронная почта</label>
+          <input class="form-input modal-login-email-input" type="email" name="email" id="login-email" placeholder="Электронная почта">
+          <label class="visually-hidden" for="login-password">Пароль</label>
+          <input class="form-input modal-login-password-input" type="password" name="password" id="login-password" placeholder="Пароль">
+          <div class="modal-login-buttons-and-links">
+            <button class="button enter-button" type="submit">Войти</button>
+            <div>
+              <a href="forgot-password.html">Забыли пароль?</a>
+              <a href="registration.html">Новая регистрация</a>
+            </div>
+          </div>
+        </form>
+      </section>
 		</main>
 
   	<footer class="container">
