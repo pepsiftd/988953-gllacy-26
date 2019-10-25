@@ -69,8 +69,8 @@ modal_show_on_hover(login);
 modal_show_on_hover(basket);
 
 /* скрыть по клику вне объекта */
-document.addEventListener("click", e => {
-	var target = e.target;
+document.addEventListener("click", function(evt) {
+	var target = evt.target;
 	all_modal_windows.forEach(function(item, i, arr) {
 				// если модалка существует и кликнули не по ней и не по вложенному в неё объекту
 			if(item.modal_window && target != item.modal_window && !item.modal_window.contains(target)) {
@@ -78,19 +78,4 @@ document.addEventListener("click", e => {
 				item.clicked = false;
 			}
 	});
-});
-
-/* обработка обратной связи */
-var feedback_button = document.querySelector(".feedback-button");
-var modal_feedback = document.querySelector(".modal-feedback");
-var feedback_close = document.querySelector(".modal-feedback .modal-close")
-
-feedback_button.addEventListener("click", function(evt) {
-	evt.preventDefault();
-	show(modal_feedback);
-});
-
-feedback_close.addEventListener("click", function(evt) {
-	evt.preventDefault();
-	hide(modal_feedback);
 });

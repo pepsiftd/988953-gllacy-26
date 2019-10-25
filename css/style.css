@@ -45,6 +45,7 @@ ul {
 }
 
 .container {
+	position: relative;
 	width: 1146px;
 	margin: 0 auto;
 	padding: 0 27px;
@@ -127,8 +128,8 @@ ul {
 	/*      ****               */
 	z-index: 1;
 	position: absolute;
-	right: 200px;
-	top: 60px;
+	right: 135px;
+	top: 50px;
 
 	background-color: #f8f7f4;
 
@@ -182,8 +183,8 @@ ul {
 
 	z-index: 1;
 	position: absolute;
-	right: 45px;
-	top: 60px;
+	right: 27px;
+	top: 50px;
 	padding: 0 16px;
 
 	color: #323232;
@@ -421,9 +422,13 @@ ul {
 /*    Главное меню     */
 .page-header {
 	position: relative;
+	margin-top: 9px;
+}
+
+.header-flex {
 	display: flex;
 	justify-content: space-between;
-	margin-top: 9px;
+
 }
 
 .logo-and-nav {
@@ -550,7 +555,6 @@ ul {
 	background-color: #f7f6f3;
 	text-decoration: none;
 	border-radius: 16px;
-	box-shadow: 0 0 0 1px #ffffff;
 }
 
 .main-nav-button:active {
@@ -835,22 +839,6 @@ ul {
 	text-shadow: 1px 1px 3px rgba(49, 50, 53, 0.5);
 }
 
-.bestsellers-list .rouble {
-	display: inline-block;
-	vertical-align: baseline;
-	position: relative;
-	top: -11px;
-	left: 2px;
-
-	font-size: 0px;
-
-	width: 31px;
-	height: 36px;
-
-	background-image: url("../img/ruble.svg");
-	background-repeat: no-repeat;
-}
-
 .bestsellers-list li {
 	position: relative;
 }
@@ -1047,7 +1035,7 @@ ul {
 
 .map {
 	position: relative;
-	margin: 0 auto;
+	margin: 0 -27px;
 	margin-top: 40px;
 	width: 1200px;
 }
@@ -1512,23 +1500,6 @@ ul {
 	text-shadow: 1px 1px 3px rgba(49, 50, 53, 0.5);
 }
 
-.goods-list .rouble {
-	display: inline-block;
-	vertical-align: baseline;
-	position: relative;
-	top: -11px;
-	left: 2px;
-
-	font-size: 0px;
-
-	width: 31px;
-	height: 36px;
-
-	background-image: url("../img/ruble.svg");
-	background-repeat: no-repeat;
-}
-
-
 /* Пагинация */
 
 .pagination {
@@ -1536,15 +1507,17 @@ ul {
 	justify-content: flex-end;
 
 	padding: 0;
-	margin-top: 47px;
-	padding-bottom: 22px;
+	margin-top: 45px;
+	padding-bottom: 29px;
 
 	border-bottom: 1px solid rgba(234, 234, 234, 0.3);
 
 	list-style: none;
 }
 
-.pagination .page-link {
+.page-link {
+	display: block;
+
 	padding-top: 4px;
 	padding-bottom: 3px;
 	padding-left: 9px;
@@ -1559,51 +1532,39 @@ ul {
 	border-radius: 50%;
 }
 
-.pagination .page-link:hover,
-.pagination .page-link:focus,
-.pagination .page-link:active {
+.page-link:hover,
+.page-link:focus,
+.page-link:active {
 	color: #ffffff;
 	background-color: rgba(255, 255, 255, 0.2);
 }
 
 .pagination .current-page {
 	color: #353535;
-	padding-top: 4px;
-	padding-bottom: 3px;
-	padding-left: 9px;
-	padding-right: 9px;
 
-	font-size: 16px;
-	line-height: 18px;
-	font-weight: 500;
-	text-decoration: none;
-	
-	border-radius: 50%;
 	background-color: #eaeaea;
 }
 
 .previous-page,
 .next-page {
-	display: inline-block;
 	width: 27px;
 	height: 26px;
+	padding: 0;
 
 	font-size: 0;
 
 	background-image: url("../img/icon-right-small.svg");
 	background-repeat: no-repeat;
+	background-position: center;
 }
 
-.previous-page {
-	background-position: left 70% bottom 0;
+.previous-page {	
 	transform: rotate(180deg);
 }
 
 .next-page {
 	margin-right: -10px;
 	margin-left: 7px;
-
-	background-position: left 50% top 0;
 }
 
 /* Подвал */
@@ -1738,4 +1699,9 @@ footer .made-in-htmlacademy {
 	background-image: url("../img/logo-htmlacademy.svg");
 	background-repeat: no-repeat;
 }
-
+/*
+body {
+	background-image: url("../../gllacy-catalog.jpg");
+	background-position: 50% 0;
+	background-repeat: no-repeat;
+}*/
