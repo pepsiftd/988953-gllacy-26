@@ -16,10 +16,12 @@ body {
 
 }
 
-body.main-page {	
+.site-wrapper {	
 	background-image: url("../img/backlight.png");
 	background-position: 50% 0;
 	background-repeat: no-repeat;
+
+	transition: background-color 0.5s ease;
 }
 
 a {
@@ -96,14 +98,10 @@ ul {
 }
 
 .modal-search {
-	/* временно для разработки */
-	/*display: block;*/
-	/*      ****               */
-
 	z-index: 1;
 	position: absolute;
 	right: 239px;
-	top: 50px;
+	top: 59px;
 
 	background-color: #f8f7f4;
 
@@ -119,13 +117,10 @@ ul {
 }
 
 .modal-login {
-	/* временно для разработки */
-	/*display: block;*/
-	/*      ****               */
 	z-index: 1;
 	position: absolute;
 	right: 135px;
-	top: 50px;
+	top: 59px;
 
 	background-color: #f8f7f4;
 
@@ -173,14 +168,10 @@ ul {
 }
 
 .modal-basket {
-	/* временно для разработки */
-	/*display: block;*/
-	/*      ****               */
-
 	z-index: 1;
 	position: absolute;
 	right: 27px;
-	top: 50px;
+	top: 59px;
 	padding: 0 16px;
 
 	color: #323232;
@@ -201,14 +192,6 @@ ul {
 .basket-table-line {
 	height: 65px;
 	vertical-align: middle;
-}
-
-.basket-table-line:first-child {
-	padding-top: 30px;
-}
-
-.basket-table-line:last-child {
-	padding-bottom: 10px;
 }
 
 .basket-cost-cell {
@@ -283,9 +266,6 @@ ul {
 }
 
 .modal-feedback {
-	/* временно для разработки */
-	/*display: block;*/
-	/*                         */
 	position: fixed;
 	width: 478px;
 	height: 442px;
@@ -310,7 +290,7 @@ ul {
 	width: 100%;
 	height: 100%;
 
-	background-color: rgba(0, 0, 0, 0.2);
+	background-color: rgba(0, 0, 0, 0.3);
 }
 
 .modal-feedback form {
@@ -434,7 +414,7 @@ ul {
 /*    Главное меню     */
 .page-header {
 	position: relative;
-	margin-top: 9px;
+	padding-top: 9px;
 }
 
 .header-flex {
@@ -723,7 +703,13 @@ ul {
 }
 
 .slider-item {
+	display: none;
 	text-align: center;
+}
+
+.slider-item img {
+	width: 647px;
+	height: 584px;
 }
 
 .slider-header {
@@ -737,6 +723,53 @@ ul {
 
 .slider a {
 	top: 459px;
+}
+
+.slider-controls {
+  position: absolute;
+  bottom: 88px;
+  left: 0;
+  z-index: 20;
+  
+  font-size: 0;
+}
+
+.slider-controls label {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  margin-right: 8px;
+
+  vertical-align: top;
+
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#slide1:checked ~ .site-wrapper {
+  background-color: #849d8f;
+}
+
+#slide2:checked ~ .site-wrapper {
+  background-color: #8996a6;
+}
+
+#slide3:checked ~ .site-wrapper {
+  background-color: #9d8b84;
+}
+
+#slide1:checked ~ .site-wrapper .slider-item:nth-child(1),
+#slide2:checked ~ .site-wrapper .slider-item:nth-child(2),
+#slide3:checked ~ .site-wrapper .slider-item:nth-child(3) {
+  display: block;
+}
+
+#slide1:checked ~ .site-wrapper label[for="slide1"],
+#slide2:checked ~ .site-wrapper label[for="slide2"],
+#slide3:checked ~ .site-wrapper label[for="slide3"] {
+  background-color: #ffffff;
 }
 
 /* Раздел горячие предложения */
@@ -1671,9 +1704,9 @@ footer .made-in-htmlacademy {
 	background-image: url("../img/logo-htmlacademy.svg");
 	background-repeat: no-repeat;
 }
-/*
-body {
-	background-image: url("../../gllacy-catalog.jpg");
+
+/*.site-wrapper {
+	background-image: url("../../gllacy-index.jpg");
 	background-position: 50% 0;
 	background-repeat: no-repeat;
 }*/
