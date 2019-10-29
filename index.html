@@ -49,7 +49,7 @@
                   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19"><g fill="#000"><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/><path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></g></svg>
                   Вход
                 </a></li>
-            <li><button class="user-navigation-item basket-button" type="button" aria-label="Корзина">Пусто</button></li>
+            <li><button class="user-navigation-item basket-button" type="button" aria-label="Корзина пуста">Пусто</button></li>
           </ul>
         </div>
 
@@ -64,9 +64,9 @@
           <h2 class="visually-hidden">Личный кабинет</h2>
           <form action="https://echo.htmlacademy.ru" method="post">          
             <label class="visually-hidden" for="login-email">Электронная почта</label>
-            <input class="form-input modal-login-email-input" type="email" name="email" id="login-email" placeholder="Электронная почта">
+            <input class="form-input modal-login-email-input" type="email" name="email" id="login-email" placeholder="Электронная почта" required>
             <label class="visually-hidden" for="login-password">Пароль</label>
-            <input class="form-input modal-login-password-input" type="password" name="password" id="login-password" placeholder="Пароль">
+            <input class="form-input modal-login-password-input" type="password" name="password" id="login-password" placeholder="Пароль" required>
             <div class="modal-login-buttons-and-links">
               <button class="button enter-button" type="submit">Войти</button>
               <div>
@@ -83,9 +83,9 @@
 
           <section class="slider">
             <div class="slider-controls">
-              <label for="slide1"></label>
-              <label for="slide2"></label>
-              <label for="slide3"></label>
+              <label for="slide1">Акция! Крем-брюле и пломбир с малиновым джемом</label>
+              <label for="slide2">Акция! Шоколадный пломбир и лимонный сорбет</label>
+              <label for="slide3">Акция! Пломбир с помадкой и клубничный щербет</label>
             </div>
             <ul>
               <li class="slider-item">
@@ -163,7 +163,7 @@
                   <span class="price">415&#8381;</span>/кг
                 </p>
                 <button class="button quick-view-button" type="button">Быстрый просмотр</button>
-              </li>            
+              </li>        
             </ul>
           </section>
 
@@ -217,9 +217,9 @@
           <p>Мы обязательно вам ответим!</p>
           <form action="https://echo.htmlacademy.ru" method="post">          
             <label for="name" class="visually-hidden">Ваше имя</label>
-            <input class="form-input" type="text" name="name" id="name" placeholder="Имя Фамилия">
+            <input class="form-input" type="text" name="name" id="name" placeholder="Имя Фамилия" required>
             <label for="feedback-email" class="visually-hidden">Ваша электронная почта</label>
-            <input class="form-input" type="email" name="email" id="feedback-email" placeholder="email@example.com">
+            <input class="form-input" type="email" name="email" id="feedback-email" placeholder="email@example.com" required>
             <label for="comment" class="visually-hidden">Комментарий</label>
             <textarea class="feedback-text form-input" name="comment" id="comment" cols="30" rows="10" placeholder="В свободной форме"></textarea>
             <button class="button" type="submit">Отправить</button>

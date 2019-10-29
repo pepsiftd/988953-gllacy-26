@@ -42,10 +42,6 @@ img {
   height: auto;
 }
 
-ul {
-	margin: 0;
-}
-
 .container {
 	position: relative;
 	width: 1146px;
@@ -425,6 +421,7 @@ ul {
 
 .logo-and-nav {
 	display: flex;
+	max-width: 75%;
 }
 
 .gllacy-logo-link {
@@ -442,6 +439,7 @@ ul {
 .user-navigation {
 	font-weight: 500;
 	line-height: 16px;
+	margin: 0;
 }
 
 .main-navigation a,
@@ -466,6 +464,7 @@ ul {
 }
 
 .main-navigation-list {
+	margin: 0;
 	position: relative;
 	height: 100%;
 }
@@ -478,6 +477,7 @@ ul {
 	top: 50px;
 	left: -7px;
 	padding: 0;
+	margin: 0;
 
 	list-style: none;
 
@@ -700,6 +700,7 @@ ul {
 .slider ul {
 	list-style: none;
 	padding: 0;	
+	margin: 0;
 }
 
 .slider-item {
@@ -770,6 +771,12 @@ ul {
 #slide2:checked ~ .site-wrapper label[for="slide2"],
 #slide3:checked ~ .site-wrapper label[for="slide3"] {
   background-color: #ffffff;
+}
+
+#slide1:focus ~ .site-wrapper label[for="slide1"],
+#slide2:focus ~ .site-wrapper label[for="slide2"],
+#slide3:focus ~ .site-wrapper label[for="slide3"] {
+  box-shadow: 0 0 4px 4px rgba(117, 161, 210, 1);
 }
 
 /* Раздел горячие предложения */
@@ -1100,6 +1107,7 @@ ul {
 
 .map-infobox .office-address {
 	display: inline-block;
+	vertical-align: baseline;
 	margin-bottom: 3px;
 
 	font-size: 18px;
@@ -1109,6 +1117,7 @@ ul {
 
 .map-infobox .phone {
 	display: inline-block;
+	vertical-align: baseline;
 	margin-top: 7px;
 
 	color: #323232;
@@ -1119,6 +1128,7 @@ ul {
 
 .map-infobox .working-hours {
 	display: inline-block;
+	vertical-align: baseline;
 	margin-bottom: 10px;
 
 	font-size: 14px;
@@ -1134,6 +1144,9 @@ ul {
 /*         */
 
 /* Хлебные крошки */
+.breadcrumbs {
+	max-width: 80%;
+}
 
 .breadcrumbs ul {
 	display: flex;
@@ -1209,7 +1222,8 @@ ul {
 }
 
 .filters ul {
-	list-style: none;	
+	list-style: none;
+	margin: 0;	
 }
 
 .filters-group-label {
@@ -1510,8 +1524,10 @@ ul {
 .pagination {
 	display: flex;
 	justify-content: flex-end;
+	flex-wrap: wrap;
 
 	padding: 0;
+	margin: 0;
 	margin-top: 45px;
 	padding-bottom: 29px;
 
@@ -1606,8 +1622,14 @@ footer .made-in-htmlacademy {
 .social ul {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 
 	padding: 0;
+	margin: 0;
+}
+
+.social li {
+	margin-bottom: 3px;
 }
 
 .footer-nav {
@@ -1620,6 +1642,7 @@ footer .made-in-htmlacademy {
 
 .footer-nav ul {
 	padding: 0;
+	margin: 0;
 }
 
 .footer-nav li {
@@ -1638,7 +1661,7 @@ footer .made-in-htmlacademy {
 	opacity: 0.8;
 
 	font-size: 0;
-
+	border-radius: 50%;
 	background-repeat: no-repeat;	
 }
 
@@ -1657,6 +1680,11 @@ footer .made-in-htmlacademy {
 .social-button:hover,
 .social-button:focus {
 	opacity: 1;
+}
+
+.social-button:focus {
+	outline: none;
+	box-shadow: 0 0 2px 2px rgba(117, 161, 210, 0.7);
 }
 
 .twitter-social {
