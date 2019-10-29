@@ -24,19 +24,6 @@ body {
 	transition: background-color 0.5s ease;
 }
 
-a {
-	color: inherit;
-	text-decoration-color: rgba(255, 255, 255, 0.2);
-}
-
-a:hover,
-a:focus,
-a:active
- {
-	color: #ffbc9e;
-	text-decoration-color: rgba(255, 188, 158, 0.3);
-}
-
 img {
   max-width: 100%;
   height: auto;
@@ -353,7 +340,7 @@ img {
 /* Кнопки */
 
 .button {
-	padding: 12px 23px;	
+	padding: 11px 22px;	
 	display: inline-block;
 
 	font: inherit;
@@ -395,7 +382,7 @@ img {
 }
 
 .main-button {
-	padding: 12px 41px;
+	padding: 10px 41px;
 
 	font-size: 32px;
 	line-height: 44px;
@@ -677,10 +664,18 @@ img {
 	display: block;
 	margin-top: 4px;
 
+	color: inherit;
 	font-size: 22px;
 	line-height: 24px;
 	font-weight: bold;
-	text-decoration: none;
+	text-decoration: none;	
+}
+
+.useful-info a:hover,
+.useful-info a:focus,
+.useful-info a:active
+{
+	color: #ffbc9e;	
 }
 
 
@@ -825,13 +820,14 @@ img {
 	background-color: #721329;
 	background-image: url("../img/raspberry-bg.jpg");
 	background-repeat: no-repeat;
-
+	background-position: top 52% left 22%;
 }
 
 .chocolate-deal {
 	background-color: #371a0c;
 	background-image: url("../img/chocolate-bg.jpg");
 	background-repeat: no-repeat;
+	background-position: top 47% right 19.2%;
 }
 
 
@@ -1146,6 +1142,19 @@ img {
 /* Хлебные крошки */
 .breadcrumbs {
 	max-width: 80%;
+}
+
+.breadcrumbs a {
+	color: inherit;
+	text-decoration-color: rgba(255, 255, 255, 0.2);
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus,
+.breadcrumbs a:active
+ {
+	color: #ffbc9e;
+	text-decoration-color: rgba(255, 188, 158, 0.3);
 }
 
 .breadcrumbs ul {
@@ -1486,6 +1495,17 @@ img {
 	display: flex;
 	flex-direction: column-reverse;
 	align-items: center;
+
+	color: inherit;
+	text-decoration-color: rgba(255, 255, 255, 0.2);
+}
+
+.goods-list-item a:hover,
+.goods-list-item a:focus,
+.goods-list-item a:active
+ {
+	color: #ffbc9e;
+	text-decoration-color: rgba(255, 188, 158, 0.3);
 }
 
 .goods-list-item h3 {
@@ -1545,6 +1565,7 @@ img {
 	padding-right: 9px;
 	margin-left: 2px;
 
+	color: inherit;
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: 500;
@@ -1605,6 +1626,18 @@ footer ul {
 	list-style: none;
 }
 
+footer a {
+	color: inherit;
+	text-decoration-color: rgba(255, 255, 255, 0.2);
+}
+
+footer a:hover,
+footer a:focus,
+footer a:active
+{
+	color: #ffbc9e;
+	text-decoration-color: rgba(255, 188, 158, 0.3);
+}
 
 footer .suppliers {
 	font-weight: bold;
@@ -1685,6 +1718,10 @@ footer .made-in-htmlacademy {
 .social-button:focus {
 	outline: none;
 	box-shadow: 0 0 2px 2px rgba(117, 161, 210, 0.7);
+}
+
+.social-button:active {
+	opacity: 0.8;
 }
 
 .twitter-social {
