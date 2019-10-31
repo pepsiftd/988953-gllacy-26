@@ -81,6 +81,7 @@ document.addEventListener("click", function(evt) {
 	all_modal_windows.forEach(function(item, i, arr) {
 				// если модалка существует и кликнули не по ней и не по вложенному в неё объекту
 			if(item.modal_window && target != item.modal_window && !item.modal_window.contains(target)) {
+				item.modal_window.classList.remove("modal-error");
 				hide(item.modal_window);
 				item.clicked = false;
 			}
@@ -95,6 +96,7 @@ window.addEventListener("keydown", function(evt) {
 			// если модалка существует и открыта
 			if(item.modal_window && item.modal_window.classList.contains("modal-show")) {
 				evt.preventDefault();
+				item.modal_window.classList.remove("modal-error");
 				hide(item.modal_window);
 				item.clicked = false;
 				item.button.focus();
@@ -102,8 +104,10 @@ window.addEventListener("keydown", function(evt) {
 			}
 		});
 		// если это обратная связь
-		if(modal_feedback.classList.contains("modal-show")) {
+		if(modal_feedback && modal_feedback.classList.contains("modal-show")) {
 			evt.preventDefault();
+			modal_feedback.classList.remove("modal-error");
+			modal_feedback.classList.remove("bounce");
 			hide(modal_feedback);
 			hide(overlay);
 			feedback_button.focus();
@@ -189,6 +193,7 @@ if(modal_feedback) {
 		evt.preventDefault();
 		show(modal_feedback);
 		show(overlay);
+		modal_feedback.classList.add("bounce");
 		var feedback_name_value = "";
 		var feedback_email_value = "";
 
@@ -208,6 +213,8 @@ if(modal_feedback) {
 
 	feedback_close.addEventListener("click", function(evt) {
 		evt.preventDefault();
+		modal_feedback.classList.remove("modal-error");
+		modal_feedback.classList.remove("bounce");
 		hide(modal_feedback);
 		hide(overlay);
 	});

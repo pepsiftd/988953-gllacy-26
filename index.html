@@ -68,11 +68,11 @@
 
         <section class="modal modal-login">
           <h2 class="visually-hidden">Личный кабинет</h2>
-          <form action="https://echo.htmlacademy.ru" method="post">          
+          <form action="https://echo.htmlacademy.ru" method="post">
             <label class="visually-hidden" for="login-email">Электронная почта</label>
-            <input class="form-input modal-login-email-input" type="email" name="email" id="login-email" placeholder="Электронная почта" required>
+            <input class="form-input modal-login-email-input" type="email" name="email" id="login-email" placeholder="Электронная почта">
             <label class="visually-hidden" for="login-password">Пароль</label>
-            <input class="form-input modal-login-password-input" type="password" name="password" id="login-password" placeholder="Пароль" required>
+            <input class="form-input modal-login-password-input" type="password" name="password" id="login-password" placeholder="Пароль">
             <div class="modal-login-buttons-and-links">
               <button class="button enter-button" type="submit">Войти</button>
               <div>
@@ -114,17 +114,19 @@
         
       		<section class="hot-deals">
             <h2 class="visually-hidden">Горячие предложения!</h2>
-            <article class="hot-deals-item raspberry-deal">
-              <h3 class="hot-deals-title">Малинка даром!</h3>
-              <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-              <a href="#" class="button">Хочу варенье!</a>
-            </article>
-              
-            <article class="hot-deals-item chocolate-deal">
-              <h3 class="hot-deals-title">Шоколадки даром!</h3>
-              <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-              <a href="#" class="button">Хочу шоколадки!</a>
-            </article>
+            <div class="hot-deals-flex">
+              <article class="hot-deals-item raspberry-deal">
+                <h3 class="hot-deals-title">Малинка даром!</h3>
+                <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+                <a href="#" class="button">Хочу варенье!</a>
+              </article>
+                
+              <article class="hot-deals-item chocolate-deal">
+                <h3 class="hot-deals-title">Шоколадки даром!</h3>
+                <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+                <a href="#" class="button">Хочу шоколадки!</a>
+              </article>
+            </div>
           </section>
 
           <section class="bestsellers">
@@ -223,9 +225,9 @@
           <p>Мы обязательно вам ответим!</p>
           <form action="https://echo.htmlacademy.ru" method="post">
             <label for="name" class="visually-hidden">Ваше имя</label>
-            <input class="form-input" type="text" name="name" id="name" placeholder="Имя Фамилия" required>
+            <input class="form-input" type="text" name="name" id="name" placeholder="Имя Фамилия">
             <label for="feedback-email" class="visually-hidden">Ваша электронная почта</label>
-            <input class="form-input" type="email" name="email" id="feedback-email" placeholder="email@example.com" required>
+            <input class="form-input" type="email" name="email" id="feedback-email" placeholder="email@example.com">
             <label for="comment" class="visually-hidden">Комментарий</label>
             <textarea class="feedback-text form-input" name="comment" id="comment" cols="30" rows="10" placeholder="В свободной форме"></textarea>
             <button class="button" type="submit">Отправить</button>
