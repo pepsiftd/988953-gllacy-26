@@ -1164,14 +1164,18 @@ img {
 	line-height: 20px;
 }
 
+.map-infobox p:first-child {
+	max-width: 60%;
+	margin-bottom: 0;
+}
+
 .map-infobox a {
 	text-decoration: none;
 }
 
 .map-infobox .office-address {
-	display: inline-block;
-	vertical-align: baseline;
-	margin-bottom: 3px;
+	margin-top: 0;
+	margin-bottom: 17px;
 
 	font-size: 18px;
 	line-height: 24px;
