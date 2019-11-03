@@ -5,7 +5,7 @@
     <title>HTML Academy:Магазин Глейси</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic-ext" rel="stylesheet">  
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">    
+    <link rel="stylesheet" href="css/style-min.css">    
   </head>
   <body>
     <input class="visually-hidden" type="radio" name="slide" id="slide1" checked>
@@ -257,8 +257,8 @@
             <a class="button feedback-button" href="#">Форма обратной связи</a>
           </div>
         </section>
-
     	</main>
+      
     	<footer class="container">
         <div class="social">
           <ul>
@@ -290,46 +290,7 @@
     </div>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=d8d7a0c1-213b-4de2-be91-790a82059b89&lang=ru_RU">
     </script>
-    <script>
-      /* Интерактивная карта от Яндекса */
-    
-      // Функция ymaps.ready() будет вызвана, когда
-      // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
-      ymaps.ready(init);
-      function init(){
-        // Создание карты.
-        var myMap = new ymaps.Map("api-map", {
-          // Координаты центра карты.
-          // Порядок по умолчанию: «широта, долгота».
-          // Чтобы не определять координаты центра карты вручную,
-          // воспользуйтесь инструментом Определение координат.
-          center: [59.939582, 30.329639],
-          // Уровень масштабирования. Допустимые значения:
-          // от 0 (весь мир) до 19.
-          zoom: 16
-        });
-
-        myPlacemark = new ymaps.Placemark([59.938631, 30.323055], {
-            hintContent: "Расположение магазина"
-        }, {
-            // Опции.
-            // Необходимо указать данный тип макета.
-            iconLayout: "default#image",
-            // Своё изображение иконки метки.
-            iconImageHref: "img/pin.svg",
-            // Размеры метки.
-            iconImageSize: [80, 140],
-            // Смещение левого верхнего угла иконки относительно
-            // её "ножки" (точки привязки).
-            iconImageOffset: [-40, -140]
-        });
-        myMap.geoObjects.add(myPlacemark);
-        // Убираем выбор слоя карты (не воспользоваться из-за блока с адресом)
-        myMap.controls.remove("typeSelector");
-        // Убираем строку поиска
-        myMap.controls.remove("searchControl");
-      }
-    </script>
-    <script src="js/script.js"></script>
+    <script src="js/ymap.js"></script>
+    <script src="js/script-min.js"></script>
   </body>
 </html>

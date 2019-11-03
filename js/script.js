@@ -91,7 +91,7 @@ document.addEventListener("click", function(evt) {
 // закрытие модалок при нажатии ESC
 
 window.addEventListener("keydown", function(evt) {
-	if(evt.key === "Escape") {
+	if(evt.keyCode === 27) {
 		all_modal_windows.forEach(function(item, i, arr) {
 			// если модалка существует и открыта
 			if(item.modal_window && item.modal_window.classList.contains("modal-show")) {
@@ -174,6 +174,8 @@ var login_form = document.querySelector(".modal-login form");
 login_form.addEventListener("submit", function(evt) {
 	if(!login_input.value || !password_input.value) {
 		evt.preventDefault();
+		login.modal_window.classList.remove("modal-error");
+		login.modal_window.offsetWidth = login.modal_window.offsetWidth;
 		login.modal_window.classList.add("modal-error");
 	} else {
 		if(storage_is_supported) {
@@ -222,6 +224,8 @@ if(modal_feedback) {
 	modal_feedback.addEventListener("submit", function(evt) {
 		if(!feedback_name.value || !feedback_email.value) {
 			evt.preventDefault();
+			modal_feedback.classList.remove("modal-error");
+			modal_feedback.offsetWidth = modal_feedback.offsetWidth;
 			modal_feedback.classList.add("modal-error");
 		} else {
 			if(storage_is_supported) {

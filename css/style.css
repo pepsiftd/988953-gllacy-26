@@ -1337,16 +1337,30 @@ img {
 }
 
 .filters .sorting-select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
 	width: 193px;
 	height: 36px;
-	padding-left: 12px;
+	padding-left: 15px;
 	padding-right: 20px;
+	padding-bottom: 2px;
+
+	background-image: url("../img/icon-down-dir.svg");
+	background-repeat: no-repeat;
+	background-position: top 50% right 15px;
+}
+
+.sorting-select::-ms-expand {
+	display: none;
 }
 
 .filters .sorting-select:hover,
 .filters .sorting-select:focus {
 	color: #323232;
 	outline: none;
+
+	background-image: url("../img/icon-down-dir-dark.svg");
 }
 
 .filters .sorting-select:focus {
@@ -1831,9 +1845,3 @@ footer .made-in-htmlacademy {
 	background-image: url("../img/logo-htmlacademy.svg");
 	background-repeat: no-repeat;
 }
-
-/*.site-wrapper {
-	background-image: url("../../gllacy-index.jpg");
-	background-position: 50% 0;
-	background-repeat: no-repeat;
-}*/
